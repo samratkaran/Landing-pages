@@ -1,0 +1,339 @@
+body{
+  overflow-x: hidden;
+}
+h1{
+  text-transform: uppercase;
+}
+.main-head-text-of-landing-page {
+  margin-top: 0rem !important;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  align-items: center;
+  background-image: url(./Assets/demo-1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.head-text-of-landing-page {
+  animation: revealAnimation 2s forwards;
+}
+
+.text-of-landing-page {
+  text-shadow: rgba(25, 24, 24, 0.619) 2px 2px 4px;
+  font-size: 295%;
+  font-weight: 700;
+  padding-bottom: 3rem;
+}
+
+.span-text-of-landing-page {
+  font-size: 30px;
+  color: white;
+  font-family: "Diphylleia", serif;
+}
+.button-of-top{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.form-of-landing-page {
+  width: 100%;
+  background-color:white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.form-of-landing-page input,
+button {
+  width: 70%;
+}
+
+.button-of-top p {
+ 
+  width: 13rem;
+  padding: 2%;
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(16, 97, 228);
+  color: white;
+  border: 1px solid #00979c;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: background-color 0.5s;
+}
+.button-of-top p:hover {
+  background-color: #FFCB05;
+  color:black ;
+}
+.head-text-of-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  text-align: center;
+  color: #002d7e;
+}
+
+.all-mba-college-with-image {
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.card {
+  margin-bottom: 3%;
+}
+.content-of-mba-in-bangalore {
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content-of-mba-in-bangalore {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.process-of-fees {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+  padding: 0 7%;
+}
+
+.card-body a {
+  font-size: 80%;
+  text-decoration: none;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-body button {
+  width: 30% !important;
+  height: 2rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.pop-up-form{
+  width: 40%;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------- */
+
+/* ----------------------------------------------------- */
+
+@keyframes revealAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+}
+
+@keyframes revealAnimationright {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(
+      100%
+    ); /* Start from the right side of the container */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left side of the container */
+  }
+}
+
+.all-comp-in-campus:hover {
+  transform: scale(1.1); /* Increase the scale factor as needed */
+}
+
+/* ----------------------------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+  .text-of-landing-page {
+    font-size: 170%;
+  }
+  .span-text-of-landing-page {
+    font-size: 47%;
+    font-weight: 500;
+    text-shadow: 3px 3px 5px black;
+  }
+
+  .button-of-top{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+  }
+
+  .button-of-top p {
+ 
+    width: 9rem;
+    padding: 2%;
+    font-size: 20px;
+    background-color: rgb(16, 97, 228);
+    color: white;
+    border: 1px solid #00979c;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: background-color 0.5s;
+  }
+
+  .form-of-landing-page {
+    margin: auto;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.814);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: revealAnimationright 2s forwards;
+    margin-top: 3rem;
+  }
+  .main-text {
+    font-size: 190%;
+    font-weight: 600;
+    text-shadow: 3px 3px 3px rgb(241, 29, 29);
+  }
+
+  .why-chose-us {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding-left: 4%;
+  }
+
+  .pop-up-form {
+   
+  }
+  .Students-component ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-head-text-of-landing-page {
+    margin-top: 0rem !important;
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    align-items: center;
+    background-size: 100%;
+    background-image:url(./Assets/demo-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+   height: fit-content;
+  
+}
+  
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 426px) {
+  .center {
+    width: 90%;
+  }
+  .button-of-top {
+    display: flex;
+    flex-wrap: wrap;
+  
+     
+    }
+}
+
+
+/* Media query for tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 29.5%;
+    height: 10rem;
+    padding: 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    flex-direction: column;
+}
+
+ 
+  }
+
+
+
+
+/* ------------ Thankyoupage CSS------------------------------- */
+
+.main-thank-you-of-landing-page {
+  background-color: rgba(228, 220, 220, 0.271);
+  border-radius: 10px;
+  text-shadow: rgba(240, 12, 12, 0.79) 2px 2px 4px;
+  color: white;
+  text-align: center;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  width: 100%;
+}

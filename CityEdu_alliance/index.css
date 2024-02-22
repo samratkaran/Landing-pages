@@ -1,0 +1,447 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.heder-of-city-guidde {
+  width: 100%;
+  position: fixed;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #900f0f;
+  z-index: 100;
+  color: white;
+  box-sizing: content-box !important;
+}
+
+
+
+.main-head-text-of-landing-page {
+  margin-top: 3rem !important;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  align-items: baseline;
+  background-size: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    #00000069,
+    #00000069
+  ),
+  url("./Assets/back-image.jpg");
+  background-repeat: no-repeat;
+}
+
+
+.span-text-of-landing-page {
+  font-size: 20px;
+  color: white;
+
+}
+.text-of-landing-page{
+  font-size: 5rem;
+  text-shadow: 2px 2px 2px #000000de;
+}
+
+.head-text-of-all {
+  text-align: center;
+  padding: 2rem 0rem;
+  
+  text-align: center;
+  color: #900f0f;
+}
+
+
+
+
+.all-program-cards{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;  
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.program-cards{
+  flex-direction: column;
+
+  width: 19rem;
+  height: 21rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.program-cards div{
+  background-color: #900f0f !important;
+  margin-bottom: 1rem;
+}
+.program-cards button{
+  width: 50%;
+  margin-left: 25%;
+  background-color: #282646;
+  color: white;
+}
+.main-why-alliance{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin: auto;
+ 
+}
+
+.why-alliance li{
+  font-size: 1.2rem;
+}
+.rank-and-content{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+.rank-main{
+  width: 40%;
+}
+.image-campus-and-details{
+  margin: auto;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items:start;
+  gap: 5%;
+
+}
+.all-buttons-of-infra{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+
+margin-bottom: 3rem;
+
+}
+.all-buttons-of-infra button{
+  width: 12%;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  border-bottom: 2px solid transparent; 
+      transition: border-bottom 0.5s ease;
+}
+.all-buttons-of-infra button:hover{
+  border-bottom: 2px solid maroon;
+}
+.campus-and-details p{
+  font-size: 80%;
+}
+
+.footer-of-page-alliance{
+  
+
+  background-color: #900f0f ;
+  width: 100vw !important;
+  box-sizing: border-box !important;
+}
+
+.all-link-in-footer i{
+  color: white;
+}
+
+/* --------------------------- */
+
+.center-main {
+  position: fixed !important;
+  top: 55% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: white !important;
+  width: 30% !important;
+  text-align: center !important;
+  height: 80% !important;
+}
+
+.close-modal {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.class-model-div {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  width: 90%;
+  height: 1rem;
+  margin-bottom: -30px;
+}
+
+.main-thank-you-of-landing-page {
+  background-color: rgba(228, 220, 220, 0.271);
+  border-radius: 10px;
+  text-shadow: rgba(240, 12, 12, 0.79) 2px 2px 4px;
+  color: white;
+  text-align: center;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  width: 100% !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-of-landing-page {
+  width: 100%;
+  background-color: #272549e6;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-of-landing-page input,
+button {
+  width: 70%;
+}
+
+/* ----------------------special button*/
+
+.comic-button {
+  display: inline-block;
+  padding: 5px 5px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #900f0f;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.comic-button:hover {
+  background-color: #fff;
+  color: #ff5252;
+  border: 2px solid #ff5252;
+  box-shadow: 5px 5px 0px #ff5252;
+}
+
+.comic-button:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+/* ----------------------------------------------------- */
+
+@keyframes revealAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+}
+
+@keyframes revealAnimationright {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(
+      100%
+    ); /* Start from the right side of the container */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left side of the container */
+  }
+}
+
+.all-comp-in-campus:hover {
+  transform: scale(1.1); /* Increase the scale factor as needed */
+}
+
+/* ----------------------------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+ 
+  .form-of-landing-page {
+    margin: auto;
+    color: white;
+    width: 90%;
+    background-color: #282646;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: revealAnimationright 2s forwards;
+    margin-top: -4rem;
+   
+  }
+
+  .text-of-landing-page {
+    font-size: 200%;
+    margin-top: -1rem;
+  }
+  .span-text-of-landing-page {
+    font-size: 100%;
+  }
+
+
+  .pop-up-form{
+
+    margin-top: 0rem !important;
+
+  }
+.memorial-image-of-head{
+  width: 100%;
+}
+
+.image-campus-and-details{
+  margin: auto;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  gap: 5%;
+
+}
+
+.image-campus-and-details{
+  margin: auto;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 5%;
+
+}
+
+.all-buttons-of-infra button{
+  width: 39%;
+}
+
+.rank-and-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.center-main {
+ 
+  position: fixed !important;
+  top: 55% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: white !important;
+  width: 90% !important;
+  text-align: center !important;
+  height: 80% !important;
+}
+
+}
+
+
+
+
+
+
+
+
+/* ------------ Thankyoupage CSS------------------------------- */
+
+.main-thank-you-of-landing-page {
+  background-color: rgba(228, 220, 220, 0.271);
+  border-radius: 10px;
+  text-shadow: rgba(240, 12, 12, 0.79) 2px 2px 4px;
+  color: white;
+  text-align: center;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  width: 100%;
+}

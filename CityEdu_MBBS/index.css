@@ -1,0 +1,380 @@
+.main-container-of-page {
+  overflow: hidden !important;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+h1 {
+  font-family: "Fontspring";
+  text-transform: uppercase;
+}
+
+.heder-of-city-guidde {
+  position: fixed;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00979c;
+  z-index: 100;
+  box-sizing: content-box !important;
+  overflow: hidden;
+}
+
+.main-head-text-of-landing-page {
+  margin-top: 0rem !important;
+  padding-top: 6rem;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  align-items: baseline;
+
+  background-size: 100%;
+  background-image: url(./Assets/hero-7.jpg);
+  /* background-image: linear-gradient(to bottom, #bbb4b490, #b9b0b078), */
+  /* url(./Assets/hero-1.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.main-text {
+  font-size: 4rem;
+  padding-bottom: 25rem;
+  font-weight: 600;
+  text-shadow: 3px 3px 3px rgb(255, 255, 255);
+  font-family: "Fontspring";
+}
+.head-text-of-landing-page {
+  animation: revealAnimation 2s forwards;
+}
+
+.text-of-landing-page {
+  text-shadow: 3px 3px 5px black;
+  font-size: 320%;
+  color: white;
+}
+
+.span-text-of-landing-page {
+  font-size: 50px;
+  font-weight: 600 !important;
+  color: white;
+  font-weight: 200;
+  text-shadow: 3px 3px 5px black;
+}
+.button-of-top button {
+  width: 12rem;
+  padding: 2%;
+  font-size: 30px;
+  background-color: rgb(16, 97, 228);
+  color: white;
+  border: 1px solid #00979c;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: background-color 0.5s;
+}
+.button-of-top button:hover {
+  background-color: white;
+  color: #022873;
+}
+
+.form-of-landing-page {
+  width: 85%;
+  background-color: #fefefe;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-of-landing-page input,
+button {
+  width: 70%;
+}
+
+.main-overview-of-college {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.head-text-of-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+
+  text-align: center;
+  color: #0d6efd;
+}
+.text-animation {
+  color: yellow;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: fangsong;
+}
+.col-md {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d5d0d0;
+  padding: 2% 2%;
+  height: 15rem;
+  margin: 2% 2%;
+  text-align: center;
+  gap: 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.campus-life {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  gap: 3rem;
+  padding: 0 3%;
+  flex-wrap: wrap;
+}
+.card-of-campus-life {
+  box-shadow: #3b1d6453 0px 4px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 18.5rem;
+  text-align: center;
+}
+.card-of-campus-life img {
+  width: 30%;
+}
+
+li::marker {
+  color: #0d6efd;
+}
+
+.why-chose-us {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer-of-page-alliance {
+  background-color: #00979c;
+}
+
+.all-link-in-footer i {
+  color: white;
+}
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-body button {
+  width: 30% !important;
+  height: 2rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* model styling start from here */
+
+.center {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  width: 30%;
+  text-align: center;
+  height: 80%;
+}
+
+.close-modal {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.class-model-div {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  width: 90%;
+  height: 1rem;
+  margin-bottom: -30px;
+}
+
+/* ----------------------------------------- */
+
+/* ----------------------------------------------------- */
+
+@keyframes revealAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+}
+
+@keyframes revealAnimationright {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(
+      100%
+    ); /* Start from the right side of the container */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left side of the container */
+  }
+}
+
+.all-comp-in-campus:hover {
+  transform: scale(1.1); /* Increase the scale factor as needed */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ----------------------------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+  .text-of-landing-page {
+    font-size: 180%;
+  }
+  .span-text-of-landing-page {
+    font-size: 192%;
+    margin-top: 2rem;
+    font-weight: 500;
+    text-shadow: 3px 3px 5px black;
+  }
+  .button-of-top {
+    display: flex !important;
+    justify-content: start !important;
+    gap: 5px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .button-of-top button {
+    width: 7rem;
+  }
+
+  .form-of-landing-page {
+    margin: auto;
+    width: 90%;
+    background-color: #fffcfc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: revealAnimationright 2s forwards;
+    margin-top: -7rem;
+  }
+
+  .why-chose-us {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding-left: 4%;
+  }
+  .text-animation {
+    font-size: 1.6rem;
+  }
+  .text-two {
+    margin-top: 1.8rem !important;
+  }
+
+  .pop-up-form {
+    margin-top: 0rem !important;
+  }
+  .Students-component ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .phone-nimbir {
+    position: relative;
+    bottom: 21.5rem;
+    left: 6rem;
+    font-size: 1.3rem;
+  }
+  .main-head-text-of-landing-page {
+    margin-top: 0rem !important;
+    display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+    gap: 8rem;
+    align-items: center;
+    background-size: 100%;
+    background-image: url(./Assets/hero-7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: fit-content;
+  }
+
+  .banner-of-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 4rem; */
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 426px) {
+  .center {
+    width: 90%;
+  }
+}
+
+/* ------------ Thankyoupage CSS------------------------------- */
+
+.main-thank-you-of-landing-page {
+  background-color: rgba(228, 220, 220, 0.271);
+  border-radius: 10px;
+  text-shadow: rgba(240, 12, 12, 0.79) 2px 2px 4px;
+  color: white;
+  text-align: center;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  width: 100%;
+}

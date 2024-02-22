@@ -1,0 +1,407 @@
+.main-container-of-page {
+  overflow: hidden !important;
+}
+h1 {
+  text-transform: uppercase;
+}
+
+.heder-of-city-guidde {
+  position: fixed;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+  box-sizing: content-box !important;
+}
+
+.main-head-text-of-landing-page {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  align-items: center;
+  background-size: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #181818e5, #0505058c),
+    url(./Assets/proto-2.jpg);
+}
+
+.head-text-of-landing-page {
+  animation: revealAnimation 2s forwards;
+}
+
+.be-addmition-text {
+  color: white;
+}
+
+.text-of-landing-page {
+  text-shadow: rgb(255, 255, 255) 1px 1px 2px;
+  font-size: 653%;
+  font-weight: 700;
+  color: #002cfe;
+}
+.span-text {
+  text-shadow: black 2px 2px 4px;
+  font-size: 313%;
+  font-weight: 700;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.span-text-of-landing-page {
+  font-size: 55px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-bottom: 5rem;
+  text-shadow: rgb(0, 0, 0) 2px 2px 4px;
+}
+
+.form-of-landing-page {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.form-of-landing-page input {
+  width: 65%;
+}
+.button-of-form {
+  background-color: black;
+  color: white;
+  width: 35%;
+}
+.button-of-form:hover {
+  background-color: rgb(182, 15, 15);
+  color: white;
+}
+
+.main-overview-of-page {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 5%;
+}
+
+.head-text-of-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.conent-of-college {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  padding: 2% 8%;
+  margin: auto;
+}
+.all-college-rvce img {
+  width: 40px;
+}
+
+.all-college-rvce {
+  border: 1px solid rgb(73, 68, 68);
+  border-radius: 5px;
+  width: 20rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+  gap: 1rem;
+  padding-right: 2%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.word-solo {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+  opacity: 0.5;
+}
+
+.eligibilty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8%;
+  margin: auto;
+}
+
+.mian-all-content-of-reason {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.reason-main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding: 3% 3%;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: white;
+  width: 15rem;
+}
+.reason-in-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.reason-main-div h6 {
+  color: white;
+}
+
+.content-of-engineerinf-college {
+  margin: auto;
+}
+
+.two-college {
+  display: flex;
+  justify-content: center;
+  gap: 18%;
+}
+
+.sliding-image-of-page {
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliding-image-of-page {
+  display: flex;
+  animation: slideRightToLeft 10s linear infinite;
+  margin: 2rem 0;
+}
+
+.sliding-image-of-page img {
+  width: 100px;
+}
+
+.campus-life {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  padding: 1% 5%;
+  /* margin: 2% 3%; */
+}
+
+.all-comp-in-campus {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel-of-page {
+  margin-bottom: 5rem !important;
+}
+
+.footer-of-page {
+  background-color: #b22222 !important;
+  width: 100vw;
+  box-sizing: content-box !important;
+}
+
+.all-link-in-footer i {
+  color: white;
+}
+
+.head-row-of-page th {
+  background-color: #939597;
+  color: white;
+}
+
+.second-row-of-page td {
+  background-color: #e71d36;
+  color: white;
+}
+
+.second-row-of-page th {
+  background-color: #e71d36;
+  color: white;
+}
+
+.third-row-of-page td,
+th {
+  background-color: #2d3142;
+  color: white;
+}
+
+.third-row-of-page th {
+  background-color: #2d3142;
+  color: white;
+}
+
+.pop-up-form {
+  width: 30%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+/* ----------------------------------------------------- */
+
+@keyframes revealAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+}
+
+@keyframes revealAnimationright {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(
+      100%
+    ); /* Start from the right side of the container */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left side of the container */
+  }
+}
+
+.all-comp-in-campus:hover {
+  transform: scale(1.1); /* Increase the scale factor as needed */
+}
+
+/* ----------------------------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+  .text-of-landing-page {
+    font-size: 270%;
+  }
+
+  .form-of-landing-page {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: revealAnimationright 2s forwards;
+    margin-top: -6rem !important;
+
+    z-index: 1000000;
+  }
+
+  .span-text {
+    text-shadow: black 2px 2px 4px;
+    font-size: 153%;
+    font-weight: 700;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .span-text-of-landing-page {
+    font-size: 25px;
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    padding-bottom: 5rem;
+    text-shadow: rgb(0, 0, 0) 2px 2px 4px;
+  }
+
+  .pop-up-form {
+    width: 90% !important;
+    margin: auto;
+    margin-top: 18% !important;
+  }
+
+  .conent-of-college {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1rem;
+    text-align: center;
+    padding: 0rem;
+  }
+
+  .main-head-text-of-landing-page {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, #181818e5, #0505058c),
+      url(./Assets/proto-2.jpg);
+    height: auto;
+  }
+
+  .main-overview-of-page {
+    /* margin-bottom: 2rem; */
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 5%;
+    text-align: center;
+  }
+}
+
+/* ------------ Thankyoupage CSS------------------------------- */
+
+.main-thank-you-of-landing-page {
+  background-color: rgba(228, 220, 220, 0.271);
+  border-radius: 10px;
+  text-shadow: rgba(240, 12, 12, 0.79) 2px 2px 4px;
+  color: white;
+  text-align: center;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  width: 100%;
+}

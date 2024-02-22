@@ -1,0 +1,362 @@
+.main-container-of-page {
+  overflow: hidden !important;
+}
+
+.heder-of-city-guidde {
+  position: fixed;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(247, 241, 241);
+  z-index: 100;
+  box-sizing: content-box !important;
+}
+
+.main-head-text-of-landing-page {
+  margin-top: 5rem !important;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  align-items: center;
+  background-image: url(./Assets/6927689.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.head-text-of-landing-page {
+  animation: revealAnimation 2s forwards;
+}
+
+.text-of-landing-page {
+  text-shadow: rgba(25, 24, 24, 0.619) 2px 2px 4px;
+  font-size: 295%;
+  font-weight: 700;
+  padding-bottom: 3rem;
+}
+
+.span-text-of-landing-page {
+  font-size: 28px;
+  color: white;
+  font-family: "Diphylleia", serif;
+}
+
+.form-of-landing-page {
+  width: 100%;
+  background-color: rgba(250, 249, 249, 0.998);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-of-landing-page input,
+button {
+  width: 70%;
+}
+
+.course-and-collage {
+  display: flex;
+  gap: 5%;
+  width: 70%;
+}
+
+.head-text-of-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  text-align: center;
+  color: #002d7e;
+}
+.para-text-of-mba {
+  margin: auto;
+}
+.all-mba-college-with-image {
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.card {
+  margin-bottom: 3%;
+}
+
+.content-of-mba-in-bangalore {
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.main-content-of-mba-in-bangalore {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.process-of-fees {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+  padding: 0 7%;
+}
+
+.card-body a {
+  font-size: 80%;
+  text-decoration: none;
+}
+
+.placement-oppertunity {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 0 7%;
+  flex-direction: column;
+}
+
+.footer-of-page {
+  background-color: #002d7e !important;
+  width: 100vw;
+  box-sizing: content-box !important;
+}
+
+.all-link-in-footer i {
+  color: white;
+}
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-body button {
+  width: 30% !important;
+  height: 2rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.spcilization-in-bangalore {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+ 
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 21.5%;
+  height:10rem;
+  padding: 1rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  flex-direction: column;
+}
+
+/* model styling start from here */
+
+.center {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  width: 30%;
+  text-align: center;
+  height: 80%;
+}
+
+.close-modal {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.class-model-div {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  width: 90%;
+  height: 1rem;
+  margin-bottom: -30px;
+}
+
+/* ----------------------------------------- */
+
+/* ----------------------------------------------------- */
+
+@keyframes revealAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+}
+
+@keyframes revealAnimationright {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(
+      100%
+    ); /* Start from the right side of the container */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left side of the container */
+  }
+}
+
+.all-comp-in-campus:hover {
+  transform: scale(1.1); /* Increase the scale factor as needed */
+}
+
+/* ----------------------------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+  .text-of-landing-page {
+    font-size: 200%;
+  }
+  .span-text-of-landing-page {
+    font-size: 51%;
+  }
+
+  .form-of-landing-page {
+    margin: auto;
+    width: 90%;
+    background-color: rgba(250, 249, 249, 0.998);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: revealAnimationright 2s forwards;
+    margin-top: -2rem;
+   
+  }
+  .pop-up-form{
+
+    margin-top: 0rem !important;
+
+  }
+
+
+
+  .all-mba-college-with-image {
+    margin: auto;
+    padding: 0 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3%;
+  }
+
+
+  .spcilization-in-bangalore {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+  }
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height:10rem;
+    
+    padding: 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    flex-direction: column;
+  }
+
+
+
+
+
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 426px) {
+  .center {
+    width: 90%;
+  }
+}
+
+
+/* Media query for tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 29.5%;
+    height: 10rem;
+    padding: 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    flex-direction: column;
+}
+
+ 
+  }
+
+
+
+
+/* ------------ Thankyoupage CSS------------------------------- */
+
+.main-thank-you-of-landing-page {
+  background-color: rgba(228, 220, 220, 0.271);
+  border-radius: 10px;
+  text-shadow: rgba(240, 12, 12, 0.79) 2px 2px 4px;
+  color: white;
+  text-align: center;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  width: 100%;
+}

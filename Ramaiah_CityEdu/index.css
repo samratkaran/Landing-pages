@@ -1,0 +1,507 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+.heder-of-city-guidde {
+  width: 100%;
+  position: fixed;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3a1d64;
+  z-index: 100;
+  color: white;
+  box-sizing: content-box !important;
+}
+
+
+
+.main-head-text-of-landing-page {
+  margin-top: 4rem !important;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  align-items: center;
+  background-size: 100%;
+  background-image: linear-gradient( to bottom, #7e7e7e42, #2222228c ), url(./Assets/back-image.png);
+  background-repeat: no-repeat;
+}
+
+
+.span-text-of-landing-page {
+  font-size: 45px;
+  color: white;
+  text-shadow: 2px 2px 2px #df3d0f;
+
+}
+.text-of-landing-page{
+  font-size: 4rem;
+  text-shadow: 2px 2px 2px #df3d0f;
+}
+
+.head-text-of-all {
+  padding: 2rem 0rem;
+  text-align: center;
+  color: #df3d0f;
+}
+.overview-of-college , .main-reason-to-study{
+  margin: auto;
+  padding: 0 3%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-bottom: 2rem;
+ 
+}
+.main-nirf{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 3%;
+  gap: 5%;
+  margin-bottom: 2rem;
+}
+
+/* nirf-------------------------------------------- */
+
+.cards {
+  margin: 2rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+ 
+
+}
+
+.cards .red {
+  background-color: #f43f5e;
+}
+
+.cards .blue {
+  background-color: #3b82f6;
+}
+
+.cards .green {
+  background-color: #22c55e;
+}
+
+.cards .card {
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+  margin: auto;
+}
+
+
+
+.cards .card:hover {
+  transform: scale(1.2, 1.2);
+}
+
+
+
+
+/* nirf-------------------------------------------- */
+
+
+
+
+
+.Top-Recruiters{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  animation: slide 15s linear infinite;
+  object-fit: cover;
+}
+
+.Top-Recruiters img{
+  width: 35%;
+  height: 40%;
+
+}
+
+
+.graduation>div{
+
+ 
+  background-color: #df3d0f;
+  margin-bottom: 4%;
+  text-align: center;
+  transition:   background-color  0.3s ease;
+}
+.graduation{
+  margin: auto;
+  display: flex;
+  justify-content: start;
+padding: 0 3%;
+  gap: 12%;
+ 
+
+}
+
+.graduation>div:hover{
+ background-color: #3a1d64;
+}
+
+.reason-to-study{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.campus-life{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  gap: 2rem;
+  padding:  0 3%;
+  flex-wrap: wrap;
+}
+.card-of-campus-life{
+  box-shadow: #3b1d6453 0px 4px 5px;
+  display: flex;flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18.5rem;
+  text-align: center;
+  gap: 1rem;
+}
+.card-of-campus-life img{
+  width: 30%;
+}
+
+/* ----------------------------- */
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  gap: 2px;
+  margin-bottom: 5%;
+}
+
+.accordion-section {
+  border: 1px solid #3b1d6453;
+  margin-bottom: 8px;
+  overflow: hidden;
+
+}
+
+.accordion-title {
+  background-color: #f1f1f1;
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+}
+
+.accordion-section.active .accordion-content {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-of-page-alliance{
+  
+
+  background-color: #3a1d64 ;
+  width: 100vw !important;
+  box-sizing: border-box !important;
+}
+
+.all-link-in-footer i{
+  color: white;
+}
+
+/* --------------------------- */
+
+.center-main {
+  position: fixed !important;
+  top: 55% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: black !important;
+  width: 30% !important;
+  text-align: center !important;
+  height: 80% !important;
+}
+
+.close-modal {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.class-model-div {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  width: 90%;
+  height: 1rem;
+  margin-bottom: -30px;
+}
+
+.main-thank-you-of-landing-page {
+  background-color: rgba(228, 220, 220, 0.271);
+  border-radius: 10px;
+  text-shadow: rgba(240, 12, 12, 0.79) 2px 2px 4px;
+  color: white;
+  text-align: center;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  width: 100% !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-of-landing-page {
+  width: 100%;
+  background-color: #3a1d64db;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-of-landing-page input,
+button {
+  width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+/* ----------------------------------------------------- */
+
+@keyframes revealAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+}
+
+@keyframes revealAnimationright {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(
+      100%
+    ); /* Start from the right side of the container */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left side of the container */
+  }
+}
+
+.all-comp-in-campus:hover {
+  transform: scale(1.1); /* Increase the scale factor as needed */
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* ----------------------------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+ 
+  .form-of-landing-page {
+    margin: auto;
+    color: white;
+    width: 90%;
+    background-color: #282646;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: revealAnimationright 2s forwards;
+    margin-top: -4rem;
+   
+  }
+
+  .text-of-landing-page {
+    font-size: 200%;
+    margin-top: 1rem;
+  }
+  .span-text-of-landing-page {
+    font-size: 128%;
+  }
+
+
+  .pop-up-form{
+
+    margin-top: 0rem !important;
+
+  }
+  .extra-text{
+    margin: auto;
+    width: 100%;
+    margin-top: 1rem;
+
+  }
+  .main-head-text-of-landing-page {
+    margin-top: 5rem !important;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    background-size: 100%;
+    background-image: linear-gradient( to bottom, #7e7e7e42, #2222228c ), url(./Assets/back-image.png);
+    background-repeat: no-repeat;
+  }
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ------------ Thankyoupage CSS------------------------------- */
+
+.main-thank-you-of-landing-page {
+  background-color: rgba(228, 220, 220, 0.271);
+  border-radius: 10px;
+  text-shadow: rgba(240, 12, 12, 0.79) 2px 2px 4px;
+  color: white;
+  text-align: center;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  width: 100%;
+}

@@ -1,0 +1,407 @@
+
+.main-container-of-page{
+  overflow: hidden !important;
+}
+body{
+  overflow-x: hidden;
+}
+
+
+.heder-of-city-guidde{
+ position: fixed;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#233b56;
+  z-index: 100;
+  box-sizing: content-box !important;
+}
+
+
+.main-head-text-of-landing-page {
+  margin-top: 5rem !important;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  align-items: center;
+  background-image: linear-gradient( to bottom, #7e7e7e42, #2222228c ), url(./Assets/JKBS_Back_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.head-text-of-landing-page {
+  animation: revealAnimation 2s forwards;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.be-addmition-text{
+  color: white;
+}
+
+.text-of-landing-page{
+  text-shadow: #022873 2px 2px 4px;
+  font-size: 450%;
+  font-weight: 700;
+  
+
+ 
+}
+
+ 
+
+.span-text-of-landing-page{
+  font-size: 30px;
+  color: white;
+  font-family: sans-serif;
+  margin-top: -2rem !important;
+ 
+}
+.span-text-of-landing-page button{
+  width: 10rem;
+  padding: 2%;
+  background-color: #022873;
+  color: white;
+  border: 1px solid black;
+  font-weight: 700;
+  transition: background-color 0.5s;
+
+}
+.span-text-of-landing-page button:hover{
+  background-color: white;
+  color: #022873;
+
+}
+
+
+
+.form-of-landing-page{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+}
+
+.form-of-landing-page input{
+ width: 70%;
+}
+
+.main-overview-of-college{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  
+}
+
+
+
+
+
+
+
+
+
+
+.button-of-form{
+  background-color:  rgba(240, 12, 12, 0.788);
+  width: 35%;
+}
+
+.head-text-of-all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  text-align: center;
+}
+.head-text-of-all h1{
+  border-bottom: 4px solid #022873;
+  padding-bottom: 0.5%;
+ 
+}
+
+
+/* Cards Spiceal-------------------------------------------- */
+
+.cards {
+  margin: 2rem 0rem;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+
+}
+
+.cards .red {
+  background-color: white;
+  color: black !important;
+}
+
+.cards .blue {
+  background-color: white;
+  color: black !important;
+}
+
+.cards .green {
+  background-color: white;
+  color: black !important;
+}
+
+.cards .card {
+  width: 16rem;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+  margin: auto;
+}
+.card:hover{
+  background-color: #233b56;
+  color: white !important;
+}
+
+/* Cards Spiceal-------------------------------------------- */
+.ug-courses , .pg-courses{
+  border: 1px solid #233b56;
+  padding: 1rem 1rem;
+}
+.main-courses{
+  width: 95%;
+  margin-bottom: 3rem !important;
+}
+.table-of-college{
+  width: 82%;
+  text-align: justify;
+  border: 1px solid #233b56;
+  margin-bottom: 2rem !important;
+}
+
+.Top-Recruiters{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  animation: slide 15s linear infinite;
+  object-fit: cover;
+}
+
+.Top-Recruiters img{
+  width: 35%;
+  height: 40%;
+
+}
+
+.campus-life{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  gap: 2rem;
+  padding:  0 3%;
+  flex-wrap: wrap;
+}
+.card-of-campus-life{
+  box-shadow: #3b1d6453 0px 4px 5px;
+  display: flex;flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 17.5rem;
+  text-align: center;
+  
+}
+.card-of-campus-life img{
+  width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-of-page{
+  background-color: #233b56 !important;
+  width: 100vw;
+  box-sizing: content-box !important;
+}
+
+.all-link-in-footer i{
+  color: white;
+}
+
+.head-row-of-page th{
+  background-color: #939597 ;
+  color: white;
+}
+
+.second-row-of-page td{
+  background-color: #e71d36 ;
+  color: white;
+}
+
+.second-row-of-page th{
+  background-color: #e71d36 ;
+  color: white;
+}
+
+
+.third-row-of-page td,th{
+ 
+  background-color: #2d3142 ;
+  color: white;
+}
+
+.third-row-of-page th{
+ 
+  background-color: #2d3142 ;
+  color: white;
+}
+.pop-up-form{
+  margin-top: 5rem;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+
+
+}
+
+
+
+
+
+
+/* ----------------------------------------------------- */
+
+@keyframes revealAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+}
+
+
+@keyframes revealAnimationright {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(100%); /* Start from the right side of the container */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left side of the container */
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.all-comp-in-campus:hover {
+  transform: scale(1.1); /* Increase the scale factor as needed */
+}
+
+/* ----------------------------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+
+  .text-of-landing-page{
+    font-size: 250%;
+  }
+  .span-text-of-landing-page{
+    font-size: 75%;
+  }
+
+  .form-of-landing-page {
+    margin: auto;
+    width: 80%;
+    background-color: rgba(250, 249, 249, 0.998);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: revealAnimationright 2s forwards;
+   margin-top: 2rem;
+   margin-right: 3rem;
+  }
+
+  .conent-of-college{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 15%;
+    text-align: center;
+    padding: 0rem;
+}
+.pop-up-form{
+
+  margin-top: 0rem !important;
+
+}
+    
+}
+
+ 
+
+
+/* ------------ Thankyoupage CSS------------------------------- */
+
+.main-thank-you-of-landing-page {
+  background-color: rgba(228, 220, 220, 0.271);
+  border-radius: 10px;
+  text-shadow: rgba(240, 12, 12, 0.79) 2px 2px 4px;
+  color: white;
+  text-align: center;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  width: 100%;
+
+}

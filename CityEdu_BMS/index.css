@@ -1,0 +1,430 @@
+.main-container-of-page {
+  overflow: hidden !important;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+h1 {
+  font-family: "Fontspring";
+}
+
+.heder-of-city-guidde {
+  position: fixed;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0088cc;
+  z-index: 100;
+  box-sizing: content-box !important;
+  overflow: hidden;
+}
+
+.main-head-text-of-landing-page {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  background-size: 100%;
+  background-image: linear-gradient(to bottom, #1e1b1b57, #2222228c),
+    url(./Assets/main-back-bms.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 90vh;
+}
+
+.head-text-of-landing-page {
+  animation: revealAnimation 2s forwards;
+}
+
+.text-of-landing-page {
+  text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+  font-size: 620%;
+  font-weight: 700;
+  padding-bottom: 5rem;
+  padding-top: 4rem;
+}
+
+.span-text-of-landing-page {
+  font-size: 6rem;
+  color: white;
+  font-weight: 200;
+  text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+}
+
+.local-text {
+  font-size: 2.5rem !important;
+  margin-top: 2rem;
+  background-color: red;
+  width: 60%;
+  text-align: center;
+  font-family: "Diphylleia", serif;
+  /* padding-top: 10px; */
+  padding-bottom: 5px;
+}
+.second-class {
+  font-size: 2.3rem;
+  color: white;
+  font-weight: 200;
+  text-shadow: rgba(12, 115, 150, 0.884) 3px 3px 5px;
+}
+.button-of-top button {
+  width: 10rem;
+  padding: 2%;
+  font-size: 30px;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: background-color 0.5s;
+}
+.button-of-top button:hover {
+  background-color: white;
+  color: #022873;
+}
+
+.form-of-landing-page {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+}
+
+.form-of-landing-page input,
+button {
+  width: 70%;
+}
+
+.main-overview-of-college {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.head-text-of-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  text-align: center;
+  color: #fb0f0c;
+}
+.Approval {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 4% 3%;
+}
+.main-Approval {
+  background-image: url(./Assets/Accreditations-back-image.jpg);
+  margin-top: 2rem;
+}
+
+.Approval img {
+  width: 20%;
+  height: 20%;
+  padding: 3%;
+  background-color: white;
+  border-radius: 10px;
+}
+.boxes-of-palcement li {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1% 1%;
+  color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.main-courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+.main-courses h6 {
+  width: 17rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 2% 2%;
+  transition: background-color 0.3s;
+}
+.main-courses h6:hover {
+  background-color: #0088cc;
+  color: white;
+}
+
+.course {
+  margin: 2% 2%;
+  padding: 2% 2%;
+  background-color: white;
+  color: black;
+  border: 1px solid black !important;
+  transition: transform 0.4s;
+  border-radius: 10px;
+  height: 18rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.course:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+.Top-Recruiters {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  animation: slide 10s linear infinite;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.Top-Recruiters img {
+  width: 20%;
+  height: 40%;
+}
+.campus-life {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  gap: 2rem;
+  padding: 0 3%;
+  flex-wrap: wrap;
+}
+.card-of-campus-life {
+  box-shadow: #3b1d6453 0px 4px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 17.5rem;
+  text-align: center;
+}
+.card-of-campus-life img {
+  width: 30%;
+}
+
+li::marker {
+  color: #fb0f0c;
+}
+
+.why-chose-us {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer-of-page-alliance {
+  background-color: #0088cc;
+}
+
+.all-link-in-footer i {
+  color: white;
+}
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-body button {
+  width: 30% !important;
+  height: 2rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* model styling start from here */
+
+.center {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  width: 30%;
+  text-align: center;
+  height: 80%;
+}
+
+.close-modal {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.class-model-div {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  width: 90%;
+  height: 1rem;
+  margin-bottom: -30px;
+}
+
+/* ----------------------------------------- */
+
+/* ----------------------------------------------------- */
+
+@keyframes revealAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+}
+
+@keyframes revealAnimationright {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(
+      100%
+    ); /* Start from the right side of the container */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left side of the container */
+  }
+}
+
+.all-comp-in-campus:hover {
+  transform: scale(1.1); /* Increase the scale factor as needed */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ----------------------------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+  .text-of-landing-page {
+    font-size: 354%;
+    margin-top: 3rem;
+    text-shadow: rgba(12, 115, 150, 0.884) 3px 3px 5px;
+  }
+  .span-text-of-landing-page {
+    font-size: 100%;
+    font-weight: 500;
+    text-shadow: rgba(12, 115, 150, 0.884) 3px 3px 5px;
+  }
+
+  .second-class {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 200;
+    text-shadow: rgba(12, 115, 150, 0.884) 3px 3px 5px;
+  }
+  .local-text {
+    font-size: 1rem !important;
+    margin-top: 0rem;
+    background-color: red;
+    width: 70%;
+    text-align: center;
+    font-family: "Diphylleia", serif;
+    padding-bottom: 2%;
+  }
+
+  .form-of-landing-page {
+    margin: auto;
+    width: 90%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: revealAnimationright 2s forwards;
+    margin-top: -2rem;
+  }
+  .text-of-landing-page {
+    padding-bottom: 0rem;
+  }
+
+  .why-chose-us {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding-left: 4%;
+  }
+
+  .pop-up-form {
+    margin-top: 0rem !important;
+  }
+  .Students-component ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-head-text-of-landing-page {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #1e1b1b57, #2222228c),
+      url(./Assets/main-back-bms.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: auto;
+  }
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 426px) {
+  .center {
+    width: 90%;
+  }
+}
+
+/* ------------ Thankyoupage CSS------------------------------- */
+
+.main-thank-you-of-landing-page {
+  background-color: rgba(228, 220, 220, 0.271);
+  border-radius: 10px;
+  text-shadow: rgba(240, 12, 12, 0.79) 2px 2px 4px;
+  color: white;
+  text-align: center;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  width: 100%;
+}

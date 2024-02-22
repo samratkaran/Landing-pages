@@ -1,0 +1,540 @@
+.main-container-of-page {
+  overflow: hidden !important;
+  overflow-x: hidden;
+}
+body{
+  overflow-x: hidden;
+}
+
+
+
+
+.main-head-text-of-landing-page {
+  margin-top: 0rem !important;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  align-items: center;
+  background-size: 100%;
+  background-image: url(./Assets/banner-image.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.main-text{
+  font-size: 4rem;
+  padding-top: 20%;
+}
+.head-text-of-landing-page {
+  animation: revealAnimation 2s forwards;
+}
+
+.text-of-landing-page {
+  text-shadow: rgba(0, 0, 0, 0.884) 3px 3px 5px;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  font-size: 350%;
+}
+
+.span-text-of-landing-page {
+  font-size: 35px;
+  color: white;
+  font-family: "Diphylleia", serif;
+  text-shadow: #06579ed6 3px 3px 5px;
+
+
+}
+
+.form-of-landing-page {
+  width: 100%;
+  background-color: #06589ee6;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 0;
+  margin-bottom: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-of-landing-page input,
+button {
+  width: 70%;
+}
+
+.course-and-collage {
+  display: flex;
+  gap: 5%;
+  width: 70%;
+}
+
+.head-text-of-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  text-align: center;
+  color: #21409a;
+}
+.why-chose-us{
+  padding: 1% 1%;
+   transition:  background-color 0.5s ease;
+
+  margin-bottom: 2rem !important;
+
+}
+
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.section-advantage3{
+  background-image: url(./Assets/main-Course.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Cards Spiceal-------------------------------------------- */
+
+.cards {
+  margin: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: start;
+  flex-wrap: wrap;
+  
+
+
+
+}
+
+.cards .red {
+  background-color: white;
+  color: black !important;
+}
+
+.cards .blue {
+  background-color: white;
+  color: black !important;
+}
+
+.cards .green {
+  background-color: white;
+  color: black !important;
+}
+
+.cards .card {
+  width: 16rem;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+ 
+}
+/* .card:hover{
+  
+} */
+
+/* Cards Spiceal-------------------------------------------- */
+ /* special buttons --------------------------------------- */
+
+
+
+ .approvel {
+  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+  --border-width: .125em;
+  --curve-size: .5em;
+  --blur: 30px;
+  --bg: #f8f5fd;
+  --color: #000000;
+  color: var(--color);
+    /* use position: relative; so that BG is only for .btn */
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  place-content: center;
+  padding: .5em 1.5em;
+  font-size: 17px;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+  clip-path: polygon(
+            /* Top-left */
+            0% var(--curve-size),
+
+            var(--curve-size) 0,
+            /* top-right */
+            100% 0,
+            100% calc(100% - var(--curve-size)),
+
+            /* bottom-right 1 */
+            calc(100% - var(--curve-size)) 100%,
+            /* bottom-right 2 */
+            0 100%);
+  transition: color 250ms;
+}
+
+.approvel::after,
+.approvel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.approvel::before {
+  background: var(--border-color);
+  background-size: 300% 300%;
+  animation: move-bg7234 5s ease infinite;
+  z-index: -2;
+}
+
+@keyframes move-bg7234 {
+  0% {
+    background-position: 31% 0%
+  }
+
+  50% {
+    background-position: 70% 100%
+  }
+
+  100% {
+    background-position: 31% 0%
+  }
+}
+
+.approvel::after {
+  background: var(--bg);
+  z-index: -1;
+  clip-path: polygon(
+            /* Top-left */
+            var(--border-width) 
+            calc(var(--curve-size) + var(--border-width) * .5),
+
+            calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
+
+            /* top-right */
+            calc(100% - var(--border-width)) 
+            var(--border-width),
+
+            calc(100% - var(--border-width)) 
+            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+
+            /* bottom-right 1 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+            /* bottom-right 2 */
+            var(--border-width) calc(100% - var(--border-width)));
+  transition: clip-path 500ms;
+}
+
+.approvel:where(:hover, :focus)::after {
+  clip-path: polygon(
+                /* Top-left */
+                calc(100% - var(--border-width)) 
+
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    
+                calc(100% - var(--border-width))
+
+                var(--border-width),
+    
+                /* top-right */
+                calc(100% - var(--border-width))
+
+                 var(--border-width),
+    
+                calc(100% - var(--border-width)) 
+
+                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+    
+                /* bottom-right 1 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) 
+                calc(100% - var(--border-width)),
+
+                /* bottom-right 2 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+                calc(100% - var(--border-width)));
+  transition: 200ms;
+}
+
+.approvel:where(:hover, :focus) {
+  color: #fff;
+}
+
+
+ /* special buttons --------------------------------------- */
+
+ .Top-Recruiters{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  animation: slide 8s linear infinite;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.Top-Recruiters img{
+  width: 30%;
+  height: 50%;
+
+}
+
+
+.image-campus-and-details{
+  margin: auto;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items:start;
+  gap: 5%;
+
+}
+.all-buttons-of-infra{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+
+margin-bottom: 3rem;
+
+}
+.all-buttons-of-infra button{
+  width: 12%;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  border-bottom: 2px solid transparent; 
+      transition: border-bottom 0.5s ease;
+}
+.all-buttons-of-infra button:hover{
+  border-bottom: 2px solid maroon;
+}
+.campus-and-details p{
+  font-size: 80%;
+}
+.boxes-of-palcement li{
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1% 1%;
+  color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  
+}
+
+.campus-life{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  gap: 2rem;
+  padding:  0 3%;
+  flex-wrap: wrap;
+}
+.card-of-campus-life{
+  box-shadow: #3b1d6453 0px 4px 5px;
+  display: flex;flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 17.5rem;
+  text-align: center;
+  
+}
+.card-of-campus-life img{
+  width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-of-page-alliance{
+  
+
+  background-color: #06589e ;
+
+}
+
+.all-link-in-footer i{
+  color: white;
+}
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-body button {
+  width: 30% !important;
+  height: 2rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+
+
+/* model styling start from here */
+
+.center {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  width: 30%;
+  text-align: center;
+  height: 80%;
+}
+
+.close-modal {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.class-model-div {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  width: 90%;
+  height: 1rem;
+  margin-bottom: -30px;
+}
+
+
+
+/* ----------------------------------------- */
+
+/* ----------------------------------------------------- */
+
+@keyframes revealAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+}
+
+@keyframes revealAnimationright {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(
+      100%
+    ); /* Start from the right side of the container */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left side of the container */
+  }
+}
+
+.all-comp-in-campus:hover {
+  transform: scale(1.1); /* Increase the scale factor as needed */
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ----------------------------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+  .text-of-landing-page {
+    font-size: 134%;
+    margin-top: 3rem;
+  }
+
+
+  .form-of-landing-page {
+    margin: auto;
+    width: 90%;
+    background-color: #06589ee6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: revealAnimationright 2s forwards;
+    height: 34rem;
+    margin-top: -10rem;
+   
+  }
+
+  .boxes-of-palcement {flex-wrap: wrap;}
+  .phone-nimbir{
+    position: relative;
+    bottom: 21.5rem;
+    left: 6rem;
+    font-size: 1.3rem;
+  
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------ Thankyoupage CSS------------------------------- */
+
+.main-thank-you-of-landing-page {
+  background-color: rgba(228, 220, 220, 0.271);
+  border-radius: 10px;
+  text-shadow: rgba(240, 12, 12, 0.79) 2px 2px 4px;
+  color: white;
+  text-align: center;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  width: 100%;
+}

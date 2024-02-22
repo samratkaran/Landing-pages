@@ -1,0 +1,477 @@
+.main-container-of-page {
+  overflow: hidden !important;
+  overflow-x: hidden;
+}
+body{
+  overflow-x: hidden;
+}
+h1{
+  font-family: "Fontspring";
+}
+
+.heder-of-city-guidde {
+  position: fixed;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:   #f9a51e;
+  z-index: 100;
+  box-sizing: content-box !important;
+  overflow: hidden;
+}
+
+
+.main-head-text-of-landing-page {
+  margin-top: 5rem !important;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  align-items: center;
+  background-size: 100%;
+  background-image: linear-gradient( to bottom, #7e7e7e42, #2222228c ), url(./Assets/IFME.jpeg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.main-text{
+  font-size: 5rem;
+  padding-bottom: 20rem;
+  font-family: "Fontspring";
+}
+.head-text-of-landing-page {
+  animation: revealAnimation 2s forwards;
+}
+
+.text-of-landing-page {
+  text-shadow: rgba(0, 0, 0, 0.884) 3px 3px 5px;
+  font-size: 200%;
+  font-weight: 700;
+  padding-bottom: 3rem;
+  font-family: "Fontspring";
+  
+}
+
+.span-text-of-landing-page {
+  font-size: 35px;
+  color: white;
+  font-family: "Diphylleia", serif;
+  text-shadow: #06579ed6 3px 3px 5px;
+
+
+}
+
+.form-of-landing-page {
+  width: 100%;
+  background-color: #848587 ;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-of-landing-page input,
+button {
+  width: 70%;
+}
+
+.course-and-collage {
+  display: flex;
+  gap: 5%;
+  width: 70%;
+}
+
+.head-text-of-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  text-align: center;
+  color: #f9a51e;
+}
+.Approval{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 4% 3%;
+  
+}
+.main-Approval{
+  background-image: url(./Assets/Accreditations-back-image.jpg);
+  margin-top: 2rem;
+
+}
+
+.Approval img{
+  width: 20%;
+  border-radius: 10px;
+}
+.main-overview-of-college{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  
+}
+.all-courses{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 10px;
+}
+.courses{
+ 
+  padding: 0 5%;
+  background-color: #848587 ;
+  transition: scale 0.2s ease, transform 0.9s ease;
+  color: white;
+}
+.courses:hover{
+  box-shadow: #f39f19 0px 13px 20px -5px, #f9a51e 0px 8px 16px -8px;
+  scale: 1.1;
+}
+
+.reason-in-isme{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.gallery div{
+  display: flex;flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0% 1%;
+}
+.gallery div:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.main-why-IFIM {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 5rem;
+}
+
+
+/* Cards Spiceal-------------------------------------------- */
+
+.cards {
+  margin: 2rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap:2rem;
+}
+
+.cards .red {
+  background-color: white;
+  color: black !important;
+}
+
+.cards .blue {
+  background-color: white;
+  color: black !important;
+}
+
+.cards .green {
+  background-color: white;
+  color: black !important;
+}
+
+.cards .card {
+  width: 20rem;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+  margin: auto;
+}
+.campus-life{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  gap: 2rem;
+  padding:  0 3%;
+  flex-wrap: wrap;
+}
+.card-of-campus-life{
+  box-shadow: #3b1d6453 0px 4px 5px;
+  display: flex;flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 17.5rem;
+  text-align: center;
+  
+}
+.card-of-campus-life img{
+  width: 30%;
+}
+
+
+
+
+/* Cards Spiceal-------------------------------------------- */
+
+.Top-Recruiters{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  animation: slide 10s linear infinite;
+  object-fit: cover;
+}
+
+.Top-Recruiters img{
+  width: 35%;
+  height: 40%;
+
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  gap: 2px;
+  margin-bottom: 5%;
+}
+
+.accordion-section {
+  border: 1px solid #848587;
+  margin-bottom: 8px;
+  overflow: hidden;
+  
+
+}
+
+.accordion-title {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+}
+
+.accordion-section.active .accordion-content {
+  display: block;
+}
+
+
+
+li::marker{
+  color: #06589e;
+}
+
+.why-chose-us{
+  display: flex;
+  gap: 3rem;
+}
+
+
+
+
+.footer-of-page-alliance{
+  
+
+  background-color: #f9a51e ;
+
+}
+
+.all-link-in-footer i{
+  color: white;
+}
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-body button {
+  width: 30% !important;
+  height: 2rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+
+
+/* model styling start from here */
+
+.center {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  width: 30%;
+  text-align: center;
+  height: 80%;
+}
+
+.close-modal {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.class-model-div {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  width: 90%;
+  height: 1rem;
+  margin-bottom: -30px;
+}
+
+
+
+/* ----------------------------------------- */
+
+/* ----------------------------------------------------- */
+
+@keyframes revealAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+}
+
+@keyframes revealAnimationright {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(
+      100%
+    ); /* Start from the right side of the container */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left side of the container */
+  }
+}
+
+.all-comp-in-campus:hover {
+  transform: scale(1.1); /* Increase the scale factor as needed */
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ----------------------------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+  .text-of-landing-page {
+    font-size: 134%;
+  }
+  .span-text-of-landing-page {
+    font-size: 100%;
+  }
+
+  .form-of-landing-page {
+    margin: auto;
+    width: 90%;
+    background-color: rgb(132, 133, 135);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: revealAnimationright 2s forwards;
+    margin-top: -3rem;
+   
+  }
+.main-text{
+  font-size: 206%;
+}
+
+
+  .why-chose-us{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding-left: 4%;
+  }
+  .pop-up-form{
+    margin-top: 2rem !important;
+  }
+  
+
+
+
+
+
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 426px) {
+  .center {
+    width: 90%;
+  }
+}
+
+
+
+
+
+
+
+/* ------------ Thankyoupage CSS------------------------------- */
+
+.main-thank-you-of-landing-page {
+  background-color: rgba(228, 220, 220, 0.271);
+  border-radius: 10px;
+  text-shadow: rgba(240, 12, 12, 0.79) 2px 2px 4px;
+  color: white;
+  text-align: center;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  width: 100%;
+}
