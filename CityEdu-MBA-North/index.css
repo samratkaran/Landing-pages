@@ -50,13 +50,13 @@ h1 {
 
 .text-of-landing-page {
   text-shadow: rgb(0, 0, 0) 3px 3px 5px;
-  font-size: 850%;
+  font-size: 750%;
   font-weight: 700;
 }
 
 .span-text-of-landing-page {
   text-shadow: rgb(0, 0, 0) 3px 3px 5px;
-  font-size: 250%;
+  font-size: 220%;
   font-weight: 600;
   color: white;
   padding-bottom: 4rem;
@@ -166,7 +166,7 @@ button {
 .all-mba-college-with-image {
   margin: auto;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 2%;
@@ -287,18 +287,16 @@ li::marker {
 .prep-tips {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
   gap: 2rem;
-  list-style-type: none;
 }
-.prep-tips li {
+.prep-tips p {
   padding-top: 1.2rem;
   width: 17rem;
   height: 5rem;
   text-align: center;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.prep-tips li:hover {
+.prep-tips p:hover {
   background-color: #16396a;
   color: white;
   cursor: pointer;
@@ -402,12 +400,12 @@ li::marker {
 
   .text-of-landing-page {
     margin-top: 3rem;
-    font-size: 340%;
+    font-size: 350%;
     text-shadow: rgb(0, 0, 0) 3px 3px 5px;
     padding-bottom: 1rem;
   }
   .span-text-of-landing-page {
-    font-size: 190%;
+    font-size: 140%;
     font-weight: 500;
     text-shadow: rgb(0, 0, 0) 3px 3px 5px;
     padding-bottom: 8rem !important;
@@ -418,7 +416,7 @@ li::marker {
     color: white;
     font-size: 160%;
     text-shadow: 3px 3px 3px rgb(0, 0, 0);
-    font-weight: 100;
+    font-weight: 500;
   }
 
   .form-of-landing-page {
@@ -446,7 +444,6 @@ li::marker {
   .all-mba-college-with-image {
     margin: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 2%;
