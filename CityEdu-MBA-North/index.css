@@ -9,6 +9,9 @@ h1 {
   font-family: "Fontspring";
   text-transform: uppercase;
 }
+.head-text-of-landing-page {
+  animation: revealAnimation 2s forwards;
+}
 
 .heder-of-city-guidde {
   position: fixed;
@@ -38,39 +41,36 @@ h1 {
   height: 100vh;
 }
 .main-text {
-  font-size: 4rem;
-  padding-bottom: 20rem;
-  font-weight: 600;
-  text-shadow: 3px 3px 3px rgb(241, 29, 29);
-  font-family: "Fontspring";
-}
-.head-text-of-landing-page {
-  animation: revealAnimation 2s forwards;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  padding-top: 5rem;
+  font-weight: 100;
 }
 
 .text-of-landing-page {
-  text-shadow: rgba(12, 115, 150, 0.884) 3px 3px 5px;
-  font-size: 390%;
+  text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+  font-size: 690%;
   font-weight: 700;
-  padding-bottom: 2rem;
 }
 
 .span-text-of-landing-page {
-  font-size: 2rem;
+  text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+  font-size: 220%;
+  font-weight: 600;
   color: white;
-  font-weight: 200;
-  text-shadow: rgba(12, 115, 150, 0.884) 3px 3px 5px;
+  padding-bottom: 4rem;
+  font-family: none !important;
+  text-transform: uppercase;
 }
 
 .local-text {
   font-size: 3rem;
   margin-top: 2rem;
-  background-color: red;
   width: 70%;
-  text-align: center;
-  font-family: "Diphylleia", serif;
   padding-bottom: 2%;
 }
+
 .button-of-top button {
   width: 12rem;
   padding: 2%;
@@ -140,7 +140,6 @@ button {
   border-top: 5px solid #6dcbf8;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  font-family: "Roboto Condensed", sans-serif;
 }
 
 .Approval {
