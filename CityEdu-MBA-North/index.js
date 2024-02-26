@@ -171,7 +171,7 @@ form.addEventListener("submit", function (event) {
     phone: numberValue,
     location: locationValue,
     course: courseValue,
-    college: "VITEEE 2024",
+    college: "MBA in north india",
   };
 
   callingApi(value);
@@ -189,7 +189,7 @@ modalForm.addEventListener("submit", function (event) {
     phone: modalNumberValue,
     location: modallocationValue,
     course: modalcourseValue,
-    college: "VITEEE 2024",
+    college: "MBA in north india",
   };
   callingApi(value);
 });
