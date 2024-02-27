@@ -168,13 +168,14 @@ const form = document.getElementById("myFirstForm");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   document.querySelector(".spinner").style.display = "block";
+
   const value = {
     name: nameValue,
     email: emailValue,
     phone: numberValue,
     location: locationValue,
     course: courseValue,
-    college: "MBA in North India",
+    college: "BDS admission",
   };
 
   callingApi(value);
@@ -194,7 +195,7 @@ modalForm.addEventListener("submit", function (event) {
     phone: modalNumberValue,
     location: modallocationValue,
     course: modalcourseValue,
-    college: "MBA in North India",
+    college: "BDS admission",
   };
   callingApi(value);
 });
