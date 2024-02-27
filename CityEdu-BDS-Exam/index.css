@@ -160,6 +160,7 @@ button {
 }
 
 .card {
+  margin: auto;
   margin-bottom: 3%;
 }
 
@@ -466,10 +467,9 @@ li::marker {
   .all-mba-college-with-image {
     margin: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
     flex-wrap: wrap;
-    gap: 2%;
+    gap: 4%;
   }
 }
 
