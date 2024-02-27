@@ -1,0 +1,781 @@
+.main-container-of-page {
+  overflow: hidden !important;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden !important;
+}
+h1 {
+  font-family: "Fontspring";
+  text-transform: uppercase;
+}
+.head-text-of-landing-page {
+  animation: revealAnimation 2s forwards;
+}
+
+.heder-of-city-guidde {
+  position: fixed;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  z-index: 100;
+  box-sizing: content-box !important;
+  overflow: hidden;
+  border-bottom: 2px solid black;
+  box-shadow: 2px 2px 5px black;
+}
+
+.main-head-text-of-landing-page {
+  /* margin-top: 5rem !important; */
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  align-items: center;
+  background-size: 100%;
+  background-image: url(./Assets/main-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+}
+.main-text {
+  color: white;
+  font-size: 3.4rem;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  padding-top: 5rem;
+  font-weight: 100;
+}
+
+.text-of-landing-page {
+  text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+  font-size: 850%;
+  font-weight: 700;
+}
+
+.span-text-of-landing-page {
+  text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+  font-size: 250%;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 4rem;
+  font-family: none !important;
+  text-transform: uppercase;
+}
+
+.local-text {
+  font-size: 3rem;
+  margin-top: 2rem;
+  width: 70%;
+  padding-bottom: 2%;
+}
+
+.button-of-top button {
+  width: 12rem;
+  padding: 2%;
+  font-size: 30px;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: background-color 0.5s;
+}
+.button-of-top button:hover {
+  background-color: white;
+  color: #022873;
+}
+
+.form-of-landing-page {
+  width: 100%;
+  background-color: #003264;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-of-landing-page input,
+button {
+  width: 70%;
+}
+
+.main-overview-of-college {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.head-text-of-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  text-align: center;
+  color: #002147;
+}
+
+.college-all {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid #dde4e8;
+  border-radius: 5px;
+  width: 17rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.top-text-of-college {
+  background-color: #123880;
+  color: white;
+  text-align: center;
+  padding: 3% 0%;
+  border-top: 5px solid #6dcbf8;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.Approval {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 4% 3%;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-body button {
+  width: 30% !important;
+  height: 2rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.all-mba-college-with-image {
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.card {
+  margin-bottom: 3%;
+}
+
+.card-body a {
+  font-size: 90%;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.main-courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  text-align: flex-start;
+  gap: 2rem;
+}
+.main-courses div {
+  display: flex;
+
+  flex-wrap: wrap;
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 2% 2%;
+  transition: background-color 0.3s;
+}
+
+.main-courses div:hover {
+  background-color: #0088cc;
+  color: white;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 0% 3%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
+}
+
+.course {
+  margin: 2% 2%;
+  padding: 2% 2%;
+  background-color: white;
+  color: black;
+  border: 1px solid black !important;
+  transition: transform 0.4s;
+  border-radius: 10px;
+  height: 18rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.course:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+.campus-life {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  gap: 1rem;
+  padding: 0 3%;
+  flex-wrap: wrap;
+}
+.card-of-campus-life {
+  box-shadow: #3b1d6453 0px 4px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 17.5rem;
+  text-align: center;
+  gap: 1rem;
+}
+.card-of-campus-life img {
+  width: 30%;
+}
+
+li::marker {
+  color: #0012d4;
+}
+
+.why-chose-us {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer-of-page-alliance {
+  background-color: #16396a;
+}
+
+.all-link-in-footer i {
+  color: white;
+}
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-body button {
+  width: 30% !important;
+  height: 2rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.prep-tips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem;
+  list-style-type: none;
+}
+.prep-tips li {
+  padding-top: 1.2rem;
+  width: 17rem;
+  height: 5rem;
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.prep-tips li:hover {
+  background-color: #16396a;
+  color: white;
+  cursor: pointer;
+  transition: background-color 800ms;
+}
+
+/* model styling start from here */
+
+.center {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  width: 30%;
+  text-align: center;
+  height: 80%;
+}
+
+.close-modal {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.class-model-div {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  width: 90%;
+  height: 1rem;
+  margin-bottom: -30px;
+}
+.all-future-scope {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* ----------------------------------------- */
+
+.card-second {
+  overflow: visible;
+  width: 20rem;
+  height: 20rem;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 5px;
+}
+
+.front,
+.back {
+  background-color: #151515;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.back::before {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 160px;
+  height: 160%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #ff9966,
+    #ff9966,
+    #ff9966,
+    #ff9966,
+    transparent
+  );
+}
+
+.back-content {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  background-color: #151515;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.card-second:hover .content {
+  transform: rotateY(180deg);
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  0% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.front {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.front .front-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.front-content .badge {
+  background-color: #00000055;
+  padding: 2px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  width: fit-content;
+}
+
+.description {
+  box-shadow: 0px 0px 10px 5px #00000088;
+  width: 100%;
+  padding: 10px;
+  background-color: #00000099;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 11px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title p {
+  width: 50%;
+}
+
+.card-footer {
+  color: #ffffff88;
+  margin-top: 5px;
+  font-size: 8px;
+}
+
+.front .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #ffbb66;
+  position: relative;
+  filter: blur(15px);
+  animation: floating 2600ms infinite linear;
+}
+
+#bottom {
+  background-color: #ff8866;
+  left: 50px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  animation-delay: -800ms;
+}
+
+#right {
+  background-color: #ff2233;
+  left: 160px;
+  top: -80px;
+  width: 30px;
+  height: 30px;
+  animation-delay: -1800ms;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* ---------------------------------------------------------- */
+
+/* ----------------------------------------------------- */
+
+@keyframes revealAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+}
+
+@keyframes revealAnimationright {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(
+      100%
+    ); /* Start from the right side of the container */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left side of the container */
+  }
+}
+
+.all-comp-in-campus:hover {
+  transform: scale(1.1); /* Increase the scale factor as needed */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ----------------------------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+  .main-head-text-of-landing-page {
+    /* margin-top: 5rem !important; */
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    align-items: center;
+    background-size: 100%;
+    background-image: url(./Assets/main-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: auto;
+  }
+
+  .text-of-landing-page {
+    margin-top: 3rem;
+    font-size: 340%;
+    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+    padding-bottom: 1rem;
+  }
+  .span-text-of-landing-page {
+    font-size: 190%;
+    font-weight: 500;
+    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+    padding-bottom: 8rem !important;
+  }
+  .main-text {
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+    color: white;
+    font-size: 160%;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    font-weight: 100;
+  }
+
+  .form-of-landing-page {
+    margin: auto;
+    width: 90%;
+    background-color: #003264;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: revealAnimationright 2s forwards;
+    margin-top: -11rem;
+    height: auto;
+  }
+
+  .pop-up-form {
+    margin-top: 0rem !important;
+  }
+  .Students-component ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .all-mba-college-with-image {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2%;
+  }
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 426px) {
+  .center {
+    width: 90%;
+  }
+}
+
+/* ------------ Thankyoupage CSS------------------------------- */
+
+.main-thank-you-of-landing-page {
+  background-color: rgba(228, 220, 220, 0.271);
+  border-radius: 10px;
+  text-shadow: rgba(240, 12, 12, 0.79) 2px 2px 4px;
+  color: white;
+  text-align: center;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  width: 100%;
+}
+
+/* ------------spinner */
+
+/* CSS for the spinner */
+.spinner {
+  position: fixed;
+  display: none;
+  width: 9px;
+  height: 9px;
+  top: 50%;
+  bottom: 0;
+  left: 50%;
+}
+
+.spinner div {
+  position: absolute;
+  width: 50%;
+  height: 150%;
+  background: #000000;
+  transform: rotate(calc(var(--rotation) * 1deg))
+    translate(0, calc(var(--translation) * 1%));
+  animation: spinner-fzua35 1s calc(var(--delay) * 1s) infinite ease;
+}
+
+.spinner div:nth-child(1) {
+  --delay: 0.1;
+  --rotation: 36;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(2) {
+  --delay: 0.2;
+  --rotation: 72;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(3) {
+  --delay: 0.3;
+  --rotation: 108;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(4) {
+  --delay: 0.4;
+  --rotation: 144;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(5) {
+  --delay: 0.5;
+  --rotation: 180;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(6) {
+  --delay: 0.6;
+  --rotation: 216;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(7) {
+  --delay: 0.7;
+  --rotation: 252;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(8) {
+  --delay: 0.8;
+  --rotation: 288;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(9) {
+  --delay: 0.9;
+  --rotation: 324;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(10) {
+  --delay: 1;
+  --rotation: 360;
+  --translation: 150;
+  background-color: white;
+}
+
+@keyframes spinner-fzua35 {
+  0%,
+  10%,
+  20%,
+  30%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90%,
+  100% {
+    transform: rotate(calc(var(--rotation) * 1deg))
+      translate(0, calc(var(--translation) * 1%));
+  }
+
+  50% {
+    transform: rotate(calc(var(--rotation) * 1deg))
+      translate(0, calc(var(--translation) * 1.5%));
+  }
+}
