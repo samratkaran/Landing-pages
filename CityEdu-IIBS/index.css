@@ -35,32 +35,33 @@ h1 {
   overflow: hidden;
   height: 90vh;
 }
-.main-text {
-  font-size: 4rem;
-  padding-bottom: 20rem;
-  font-weight: 600;
-  text-shadow: 3px 3px 3px rgb(241, 29, 29);
-  font-family: "Fontspring";
-}
 .head-text-of-landing-page {
   animation: revealAnimation 2s forwards;
 }
-
 .text-of-landing-page {
-  text-shadow: rgba(30, 28, 28, 0.884) 3px 3px 5px;
-  font-size: 420%;
+  text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+  font-size: 600%;
   font-weight: 700;
-  padding-bottom: 3rem;
 }
 
 .span-text-of-landing-page {
-  font-size: 45px;
-  color: white;
+  text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+  font-size: 310%;
   font-weight: 200;
-  text-shadow: 3px 3px 5px black;
+  color: white;
+  /* padding-bottom: 4rem; */
+  font-family: cursive;
 }
+.main-text {
+  color: white;
+  font-size: 3.4rem;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  /* padding-top: 3rem; */
+  font-weight: 600;
+}
+
 .button-of-top button {
-  width: 10rem;
+  width: 12rem;
   padding: 2%;
   font-size: 30px;
   background-color: red;
@@ -73,6 +74,15 @@ h1 {
 .button-of-top button:hover {
   background-color: white;
   color: #022873;
+}
+.top-text-of-college {
+  background-color: #123880;
+  color: white;
+  text-align: center;
+  padding: 3% 0%;
+  border-top: 5px solid #6dcbf8;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .form-of-landing-page {
@@ -112,7 +122,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin: 3rem 0;
   text-align: center;
   color: #252525;
 }
@@ -130,7 +140,7 @@ button {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: 20rem;
 }
-.course h4 {
+.course h3 {
   border-bottom: 2px solid black;
   padding-bottom: 1rem;
 }
@@ -171,8 +181,9 @@ button {
 }
 .campus-life {
   display: flex;
-  margin: auto;
+  /* margin: auto; */
   justify-content: center;
+  align-items: center;
   gap: 2rem;
   padding: 0 6%;
   flex-wrap: wrap;
@@ -337,40 +348,52 @@ td {
 /* ----------------------------------------------------------------------- */
 
 @media screen and (max-width: 767px) {
+  .main-head-text-of-landing-page {
+    margin-top: 5rem !important;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    align-items: center;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #7e7e7e42, #2222228c),
+      url(./Assets/main-back.jpg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    overflow: hidden;
+    height: auto;
+  }
+
   .text-of-landing-page {
-    font-size: 214%;
+    font-size: 300%;
+    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+    /* padding-bottom: 1rem; */
   }
   .span-text-of-landing-page {
-    margin-top: 1rem;
-    font-size: 67%;
+    font-size: 150%;
     font-weight: 500;
-    text-shadow: 3px 3px 5px black;
+    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+    padding-bottom: 1rem !important;
   }
-  .button-of-top {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 2rem;
-    padding-top: 2rem;
-    flex-wrap: wrap;
+  .main-text {
+    color: white;
+    font-size: 150%;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    font-weight: 600;
+    padding-top: 1rem;
   }
 
   .form-of-landing-page {
     margin: auto;
     width: 90%;
-    background-color: rgba(242, 227, 210, 0.882);
+    background-color: #ffffff;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     animation: revealAnimationright 2s forwards;
-    margin-top: -7rem;
-  }
-  .main-text {
-    font-size: 190%;
-    font-weight: 600;
-    text-shadow: 3px 3px 3px rgb(241, 29, 29);
+    margin-top: -6rem;
+    height: auto;
   }
 
   .why-chose-us {
@@ -401,6 +424,17 @@ td {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     height: 22rem;
+  }
+
+  .campus-life {
+    display: flex;
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* padding: 0 6%; */
+    flex-wrap: wrap;
+    padding-left: 15%;
   }
 }
 
@@ -441,4 +475,118 @@ td {
   margin-top: 2rem !important;
   margin-bottom: 2rem !important;
   width: 100%;
+}
+
+/* ------------spinner */
+
+/* CSS for the spinner */
+.spinner {
+  position: fixed;
+  display: none;
+  width: 9px;
+  height: 9px;
+  top: 50%;
+  bottom: 0;
+  left: 50%;
+}
+
+.spinner div {
+  position: absolute;
+  width: 50%;
+  height: 150%;
+  background: #000000;
+  transform: rotate(calc(var(--rotation) * 1deg))
+    translate(0, calc(var(--translation) * 1%));
+  animation: spinner-fzua35 1s calc(var(--delay) * 1s) infinite ease;
+}
+
+.spinner div:nth-child(1) {
+  --delay: 0.1;
+  --rotation: 36;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(2) {
+  --delay: 0.2;
+  --rotation: 72;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(3) {
+  --delay: 0.3;
+  --rotation: 108;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(4) {
+  --delay: 0.4;
+  --rotation: 144;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(5) {
+  --delay: 0.5;
+  --rotation: 180;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(6) {
+  --delay: 0.6;
+  --rotation: 216;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(7) {
+  --delay: 0.7;
+  --rotation: 252;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(8) {
+  --delay: 0.8;
+  --rotation: 288;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(9) {
+  --delay: 0.9;
+  --rotation: 324;
+  --translation: 150;
+  background-color: white;
+}
+
+.spinner div:nth-child(10) {
+  --delay: 1;
+  --rotation: 360;
+  --translation: 150;
+  background-color: white;
+}
+
+@keyframes spinner-fzua35 {
+  0%,
+  10%,
+  20%,
+  30%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90%,
+  100% {
+    transform: rotate(calc(var(--rotation) * 1deg))
+      translate(0, calc(var(--translation) * 1%));
+  }
+
+  50% {
+    transform: rotate(calc(var(--rotation) * 1deg))
+      translate(0, calc(var(--translation) * 1.5%));
+  }
 }

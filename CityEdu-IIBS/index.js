@@ -1,7 +1,6 @@
-
 function toggleAccordion(title) {
   const section = title.parentNode;
-  section.classList.toggle('active');
+  section.classList.toggle("active");
 }
 // -------------------------------------------
 
@@ -10,11 +9,9 @@ const openModalButtons = document.querySelectorAll(".open-modal");
 const closeModalButton = document.querySelector(".close-modal");
 const modal = document.querySelector(".modal");
 
-
-console.log(openModalButtons,closeModalButton)
+console.log(openModalButtons, closeModalButton);
 openModalButtons.forEach((button) => {
   button.addEventListener("click", () => {
-   
     modal.style.display = "block";
   });
 });
@@ -23,44 +20,42 @@ closeModalButton.addEventListener("click", () => {
   console.log("Close me");
   modal.style.display = "none";
 });
+// ----------------------------
 
 // -------------------------------------mailing service-----------------------
 
-let nameValue = ""
-let emailValue = ""
-let phoneValue = ""
-let locationValue = ""
-let courseValue = ""
-
+let nameValue = "";
+let emailValue = "";
+let phoneValue = "";
+let locationValue = "";
+let courseValue = "";
 
 let nameElement = document.querySelector(".nameInput");
-nameElement.addEventListener("input",() =>{
-  nameValue = event.target.value
-  console.log(nameValue)
-})
+nameElement.addEventListener("input", () => {
+  nameValue = event.target.value;
+  console.log(nameValue);
+});
 // -----------------------------end of nameInput--------------------
 
 let emailElement = document.querySelector(".EmailInput");
-emailElement.addEventListener("input",() =>{
-  emailValue = event.target.value
-  console.log(emailValue)
+emailElement.addEventListener("input", () => {
+  emailValue = event.target.value;
+  console.log(emailValue);
 });
 // -----------------------------end of emailInput--------------------
 
-
 let numberElement = document.querySelector(".numberInput");
-numberElement.addEventListener("input",() =>{
-  numberValue = event.target.value
-  console.log(numberValue)
+numberElement.addEventListener("input", () => {
+  numberValue = event.target.value;
+  console.log(numberValue);
 });
 
 // ----------------end of numberInput-------------------
 
-
 let locationElement = document.querySelector(".locationInput");
-locationElement.addEventListener("input",() =>{
-  locationValue = event.target.value
-  console.log(locationValue)
+locationElement.addEventListener("input", () => {
+  locationValue = event.target.value;
+  console.log(locationValue);
 });
 
 // ----------------------end of location input---------------
@@ -74,53 +69,45 @@ locationElement.addEventListener("input",() =>{
 // -------------------end if college input-------------------
 
 let courseElement = document.querySelector(".courseInput");
-courseElement.addEventListener("input",() =>{
-  courseValue = event.target.value
-  console.log(courseValue)
+courseElement.addEventListener("input", () => {
+  courseValue = event.target.value;
+  console.log(courseValue);
 });
 
 // ----------------end if course input-------------------
 
-
-
-
-let modalnameValue = ""
-let modalemailValue = ""
-let   modalNumberValue = ""
-let modallocationValue = ""
-let modalcourseValue = ""
-
-
-
+let modalnameValue = "";
+let modalemailValue = "";
+let modalNumberValue = "";
+let modallocationValue = "";
+let modalcourseValue = "";
 
 let modalNameElement = document.querySelector(".modalNnameInput");
-modalNameElement.addEventListener("input",() =>{
-  modalnameValue = event.target.value
-  console.log(modalnameValue)
-})
+modalNameElement.addEventListener("input", () => {
+  modalnameValue = event.target.value;
+  console.log(modalnameValue);
+});
 // -----------------------------end of nameInput--------------------
 
 let modalEmailElement = document.querySelector(".modalEmailInput");
-modalEmailElement.addEventListener("input",() =>{
-  modalemailValue = event.target.value
-  console.log(modalemailValue)
+modalEmailElement.addEventListener("input", () => {
+  modalemailValue = event.target.value;
+  console.log(modalemailValue);
 });
 // -----------------------------end of emailInput--------------------
 
-
 let modalNumberElement = document.querySelector(".modalNumberInput");
-modalNumberElement.addEventListener("input",() =>{
-  modalNumberValue = event.target.value
-  console.log(modalNumberValue)
+modalNumberElement.addEventListener("input", () => {
+  modalNumberValue = event.target.value;
+  console.log(modalNumberValue);
 });
 
 // ----------------end of numberInput-------------------
 
-
 let modalLocationElement = document.querySelector(".modalLocationInput");
-modalLocationElement.addEventListener("input",() =>{
-  modallocationValue = event.target.value
-  console.log(modallocationValue)
+modalLocationElement.addEventListener("input", () => {
+  modallocationValue = event.target.value;
+  console.log(modallocationValue);
 });
 
 // ----------------------end of location input---------------
@@ -134,19 +121,17 @@ modalLocationElement.addEventListener("input",() =>{
 // -------------------end if college input-------------------
 
 let modalCourseElement = document.querySelector(".modalCourseInput");
-modalCourseElement.addEventListener("input",() =>{
-  modalcourseValue = event.target.value
-  console.log(modalcourseValue)
+modalCourseElement.addEventListener("input", () => {
+  modalcourseValue = event.target.value;
+  console.log(modalcourseValue);
 });
 
 // ----------------end if course input-------------------
 
-
-
-const callingApi = (value)=>{
+const callingApi = (value) => {
   const requestOptions = {
     method: "POST",
-    headers: { 
+    headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(value),
@@ -161,63 +146,57 @@ const callingApi = (value)=>{
     })
     .then((data) => {
       form.reset();
-      document.querySelector("#changeMe").innerHTML = `  <div class="col-md-6 mb-2 mt-3 main-thank-you-of-landing-page">
+      document.querySelector(
+        "#changeMe"
+      ).innerHTML = `  <div class="col-md-6 mb-2 mt-3 main-thank-you-of-landing-page">
       <h3>Thank you For Inquiring 
         <br>
         <br>
         Our Counsellors will contact you within 24hrs to 48hrs</h3>
-    </div>`
-      
-      
-      
+    </div>`;
+      document.querySelector(".spinner").style.display = "none";
     })
     .catch((error) => {
       // console.error("Error during POST request:", error);
-      alert("some error occurred Try again sometime")
+      alert("some error occurred Try again sometime");
       // Handle errors that occurred during the request
     });
-}
+};
 
 const form = document.getElementById("myFirstForm");
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
+  document.querySelector(".spinner").style.display = "block";
   const value = {
-    name: nameValue, 
-    email: emailValue, 
-    phone: numberValue, 
+    name: nameValue,
+    email: emailValue,
+    phone: numberValue,
     location: locationValue,
-    course: courseValue, 
-    college:"MOUNT CARMEL COLLEGE",
+    course: courseValue,
+    college: "IIBS Bangalore",
   };
 
-  callingApi(value) 
+  callingApi(value);
 });
 
-
-
 // -----------------------------------------------
-
-
 
 const modalForm = document.getElementById("mySecondForm");
 modalForm.addEventListener("submit", function (event) {
   event.preventDefault();
+  document.querySelector(".spinner").style.display = "block";
+
   modal.style.display = "none";
   const value = {
-
-
-   name: modalnameValue,
+    name: modalnameValue,
     email: modalemailValue,
     phone: modalNumberValue,
-    location:modallocationValue,
+    location: modallocationValue,
     course: modalcourseValue,
-    college:"MOUNT CARMEL COLLEGE"       ,
-};
-callingApi(value)
+    college: "IIBS Bangalore",
+  };
+  callingApi(value);
+});
 
-
-
-})
-
-
+// -------------------spinner
