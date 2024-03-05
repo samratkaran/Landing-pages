@@ -30,7 +30,7 @@ h1 {
   justify-content: center;
   gap: 6rem;
   align-items: center;
-  background-image: linear-gradient(to bottom, #000000ad, #0000002e),
+  background-image: linear-gradient(to bottom, #000000cc, #000000ac),
     url(./Assets/ayur.jpg);
   /* background-image: url(./Assets/Ayurvedic-Medicine-Manufacturer-in-Kanpur.jpg); */
   background-repeat: no-repeat;
@@ -39,7 +39,7 @@ h1 {
   height: 90vh;
 }
 .main-text {
-  font-size: 4rem;
+  font-size: 5rem;
   padding-bottom: 20rem;
   font-weight: 600;
   text-shadow: 3px 3px 3px rgb(241, 29, 29);
@@ -51,17 +51,22 @@ h1 {
 
 .text-of-landing-page {
   text-shadow: rgba(0, 0, 0, 0.884) 3px 3px 5px;
-  font-size: 690%;
+  font-size: 790%;
   font-weight: 700;
   padding-bottom: 2rem;
   color: rgb(255, 255, 255);
 }
 
 .span-text-of-landing-page {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: white;
   font-weight: 200;
   text-shadow: rgba(0, 0, 0, 0.884) 3px 3px 5px;
+}
+.third-class {
+  color: yellow;
+  margin-top: 2rem;
+  font-size: 3rem;
 }
 
 .local-text {
@@ -91,7 +96,7 @@ h1 {
 
 .form-of-landing-page {
   width: 100%;
-  background-color: #9c6032;
+  background-color: #fffff5;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -331,12 +336,18 @@ td {
   }
   .second-class {
     font-size: 120%;
+    margin-right: 2rem;
+  }
+  .third-class {
+    color: yellow;
+    margin-top: 2rem;
+    font-size: 1.6rem;
   }
 
   .form-of-landing-page {
     margin: auto;
     width: 90%;
-    background-color: #9c6032;
+    background-color: #fffff5;
     border-radius: 10px;
     display: flex;
     flex-direction: column;

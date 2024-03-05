@@ -177,7 +177,7 @@ form.addEventListener("submit", function (event) {
     college: "BAMS 2024",
   };
 
-  // callingApi(value);
+  callingApi(value);
 });
 
 // -----------------------------------------------
@@ -196,7 +196,7 @@ modalForm.addEventListener("submit", function (event) {
     course: modalcourseValue,
     college: "BAMS 2024",
   };
-  // callingApi(value);
+  callingApi(value);
 });
 
 // -------------------spinner
