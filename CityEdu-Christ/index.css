@@ -27,7 +27,7 @@ h1 {
   /* margin-top: 5rem !important; */
   display: flex;
   justify-content: center;
-  gap: 6rem;
+  gap: 2rem;
   align-items: center;
   background-size: 100%;
   background-image: linear-gradient(to bottom, #7e7e7e42, #2222228c),
@@ -37,43 +37,41 @@ h1 {
   overflow: hidden;
   height: 100vh;
 }
-.main-text {
-  font-size: 4rem;
-  padding-bottom: 20rem;
-  font-weight: 600;
-  text-shadow: 3px 3px 3px rgb(241, 29, 29);
-  font-family: "Fontspring";
-}
+
 .head-text-of-landing-page {
   animation: revealAnimation 2s forwards;
 }
 
 .text-of-landing-page {
   text-shadow: rgba(12, 115, 150, 0.884) 3px 3px 5px;
-  font-size: 390%;
+  font-size: 510%;
   font-weight: 700;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 
 .span-text-of-landing-page {
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: white;
   font-weight: 200;
   text-shadow: rgba(12, 115, 150, 0.884) 3px 3px 5px;
 }
 
-.local-text{
+.local-text {
   font-size: 3rem;
-   margin-top: 2rem;
-   background-color: red;
-    width: 70%; 
-    text-align: center;
-     font-family: 'Diphylleia', serif;
-     padding-bottom: 2%;
+  margin-top: 2rem;
+  background-color: red;
+  width: 70%;
+  text-align: center;
+  font-family: "Diphylleia", serif;
+  padding-bottom: 2%;
+}
+.button-of-top {
+  display: flex;
+  gap: 2rem;
 }
 .button-of-top button {
-  width: 12rem;
-  padding: 2%;
+  width: 16rem;
+  padding: 1%;
   font-size: 30px;
   background-color: red;
   color: white;
@@ -104,7 +102,7 @@ h1 {
 
 .form-of-landing-page input,
 button {
-  width: 70%;
+  width: 80%;
 }
 
 .main-overview-of-college {
@@ -114,17 +112,16 @@ button {
   gap: 2rem;
 }
 
-
 .head-text-of-all {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin: 3rem 0;
   text-align: center;
   color: #39639b;
 }
 
-.college-all{
+.college-all {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -132,11 +129,9 @@ button {
   border-radius: 5px;
   width: 17rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-  
-
 }
-.top-text-of-college{
+
+.top-text-of-college {
   background-color: #123880;
   color: white;
   text-align: center;
@@ -144,35 +139,30 @@ button {
   border-top: 5px solid #6dcbf8;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  font-family: 'Roboto Condensed',sans-serif;
- 
+  font-family: "Roboto Condensed", sans-serif;
 }
 
-
-
-.Approval{
+.Approval {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5%;
   padding: 4% 3%;
-  
 }
-.main-Approval{
+.main-Approval {
   background-image: url(./Assets/Accreditations-back-image.jpg);
   margin-top: 2rem;
   padding: 0% !important;
-
 }
 
-.Approval img{
+.Approval img {
   width: 20%;
   height: 20%;
   padding: 3%;
   background-color: white;
   border-radius: 10px;
 }
-.boxes-of-palcement li{
+.boxes-of-palcement li {
   width: 30rem;
   display: flex;
   flex-direction: column;
@@ -181,29 +171,32 @@ button {
   color: white;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  
 }
 
-.main-courses{
+.main-courses {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start ;
-  text-align: flex-start;
   gap: 2rem;
-
+  justify-content: center;
 }
-.main-courses div{
+.main-courses div {
   display: flex;
-
   flex-wrap: wrap;
-  width: 100%;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  justify-content: center;
   padding: 2% 2%;
+  width: 20.5rem;
+  /* text-align: center; */
+  text-align: center;
+  font-size: 1.2rem;
+  /* height: 5rem; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: background-color 0.3s;
 }
+.main-courses b {
+  font-size: 2rem;
+}
 
-
-.main-courses div:hover{
+.main-courses div:hover {
   background-color: #0088cc;
   color: white;
 }
@@ -213,34 +206,12 @@ table {
   padding: 0% 3%;
 }
 
-th, td {
+th,
+td {
   border: 1px solid black;
   padding: 10px;
   text-align: left;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .course {
   margin: 2% 2%;
@@ -258,8 +229,6 @@ th, td {
   color: black;
   transform: scale(1.1);
 }
-
-
 
 .Top-Recruiters {
   width: 100%;
@@ -293,7 +262,6 @@ th, td {
   width: 17.5rem;
   text-align: center;
   gap: 1rem;
-  
 }
 .card-of-campus-life img {
   width: 30%;
@@ -410,22 +378,28 @@ li::marker {
 
 @media screen and (max-width: 767px) {
   .text-of-landing-page {
-    font-size: 204%;
+    padding-top: 1rem;
+    font-size: 274%;
     text-shadow: rgba(12, 115, 150, 0.884) 3px 3px 5px;
     margin-top: 2rem;
   }
+  .main-head-text-of-landing-page {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #7e7e7e42, #2222228c),
+      url(./Assets/main-back.jpg);
+    height: auto;
+  }
   .span-text-of-landing-page {
-    font-size: 60%;
+    font-size: 50%;
     font-weight: 500;
     text-shadow: rgba(12, 115, 150, 0.884) 3px 3px 5px;
   }
-  .button-of-top {
-    display: flex !important;
-    justify-content: start !important;
-    align-items: center !important;
-    gap: 2rem !important;
-    padding-top: 2rem !important;
-    flex-wrap: wrap !important;
+  .button-of-top button {
+    width: 9rem;
+    font-size: 24px;
   }
 
   .form-of-landing-page {
@@ -438,12 +412,12 @@ li::marker {
     justify-content: center;
     align-items: center;
     animation: revealAnimationright 2s forwards;
-    margin-top: -17rem;
+    margin-top: -22rem;
   }
   .main-text {
-    font-size: 190%;
+    font-size: 120%;
+    padding-bottom: 20rem;
     font-weight: 600;
-    text-shadow: 3px 3px 3px rgb(241, 29, 29);
   }
 
   .why-chose-us {
@@ -466,14 +440,14 @@ li::marker {
   transform: scale(1.1);
 }
 
-.local-text{
+.local-text {
   font-size: 2rem;
-   margin-top: 2rem;
-   background-color: red;
-    width: 70%; 
-    text-align: center;
-     font-family: 'Diphylleia', serif;
-     padding-bottom: 2%;
+  margin-top: 2rem;
+  background-color: red;
+  width: 70%;
+  text-align: center;
+  font-family: "Diphylleia", serif;
+  padding-bottom: 2%;
 }
 
 @media screen and (max-width: 426px) {
@@ -496,4 +470,3 @@ li::marker {
   margin-bottom: 2rem !important;
   width: 100%;
 }
-
