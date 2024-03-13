@@ -2,11 +2,10 @@
   overflow: hidden !important;
   overflow-x: hidden;
 }
-body{
+body {
   overflow-x: hidden;
-  
 }
-h1{
+h1 {
   font-family: "Fontspring";
   text-transform: uppercase;
 }
@@ -23,19 +22,19 @@ h1{
   overflow: hidden;
 }
 
-
 .main-head-text-of-landing-page {
-  margin-top: 5rem !important;
   display: flex;
   justify-content: center;
   gap: 6rem;
   align-items: center;
   background-size: 100%;
-  background-image: linear-gradient( to bottom, #7e7e7e42, #2222228c ), url(./Assets/main-back.jpg);
+  background-image: linear-gradient(to bottom, #0000006e, #00000094),
+    url(./Assets/main-back.jpg);
   background-repeat: no-repeat;
   overflow: hidden;
+  height: 100vh;
 }
-.main-text{
+.main-text {
   font-size: 4rem;
   padding-bottom: 20rem;
   font-weight: 600;
@@ -47,42 +46,45 @@ h1{
 }
 
 .text-of-landing-page {
-  text-shadow: rgba(30, 28, 28, 0.884) 3px 3px 5px;
-  font-size: 420%;
+  text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+  font-size: 620%;
   font-weight: 700;
-  padding-bottom: 3rem;
- 
-  
 }
 
 .span-text-of-landing-page {
   font-size: 45px;
   color: white;
   font-weight: 200;
-  text-shadow: 3px 3px 5px black;
+  margin-top: 2rem;
+  text-shadow: rgb(0, 0, 0) 3px 3px 5px;
 }
-.button-of-top button{
-  width: 10rem;
-  padding: 2%;
+.button-of-top {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  flex-wrap: wrap;
+}
+.button-of-top button {
+  width: 12rem;
+  padding: 1%;
   font-size: 30px;
-  background-color: red;
-  color: white;
-  border: 1px solid red;
-  font-weight: 700;
+  background-color: yellow;
+  color: black;
+  font-weight: 600;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: background-color 0.5s;
-
 }
-.button-of-top button:hover{
-  background-color: white;
-  color: #022873;
-
+.button-of-top button:hover {
+  background-color: #fff;
+  color: #000;
 }
-
 
 .form-of-landing-page {
   width: 100%;
-  background-color: #f2e3d2e1 ;
+  background-color: #f2e3d2;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -97,14 +99,13 @@ h1{
 
 .form-of-landing-page input,
 button {
-  width: 70%;
+  width: 80%;
 }
 
-.main-overview-of-college{
+.main-overview-of-college {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 2rem;
 }
 
 .course-and-collage {
@@ -117,11 +118,12 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   text-align: center;
   color: #3e0b00;
 }
-.course{
+.course {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -133,23 +135,31 @@ button {
   transition: transform 0.4s;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  height: 20rem;
+  height: 22rem;
 }
-.course h4{
+.course h4 {
   border-bottom: 2px solid black;
   padding-bottom: 1rem;
-
 }
-.course span{
+.course span {
   font-size: 0.8rem;
+  color: black;
+  font-weight: 500;
 }
 
-.course:hover{
-  background-color: white ;
-  color: black;
- transform: scale(1.1);
+.course li {
+  font-size: 1.8rem;
+  font-weight: 700;
+  list-style: none;
+  color: #022873;
 }
-.boxes-of-palcement li{
+
+.course:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+.boxes-of-palcement li {
   width: 30rem;
   display: flex;
   flex-direction: column;
@@ -158,10 +168,9 @@ button {
   color: white;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  
 }
 
-.Top-Recruiters{
+.Top-Recruiters {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -172,48 +181,45 @@ button {
   margin-bottom: 2rem;
 }
 
-.Top-Recruiters img{
+.Top-Recruiters img {
   width: 20%;
   height: 40%;
-
 }
-.campus-life{
+.campus-life {
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
   gap: 2rem;
-  padding:  0 3%;
+  padding: 0 3%;
   flex-wrap: wrap;
 }
-.card-of-campus-life{
+.card-of-campus-life {
   box-shadow: #3b1d6453 0px 4px 5px;
-  display: flex;flex-direction: column;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 17.5rem;
   text-align: center;
-  
 }
-.card-of-campus-life img{
+.card-of-campus-life img {
   width: 30%;
 }
 
-.Approval{
+.Approval {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5%;
   padding: 4% 3%;
-  
 }
-.main-Approval{
+.main-Approval {
   background-color: #f2e3d2;
- 
-  margin-top: 2rem;
 
+  margin-top: 2rem;
 }
 
-.Approval img{
+.Approval img {
   width: 20%;
   height: 20%;
   padding: 3%;
@@ -221,39 +227,21 @@ button {
   border-radius: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-li::marker{
+li::marker {
   color: #3e0b00;
 }
 
-.why-chose-us{
+.why-chose-us {
   display: flex;
   gap: 3rem;
 }
 
-
-
-.footer-of-page-alliance{
-  
-
-  background-color: #3e0b00 ;
+.footer-of-page-alliance {
+  background-color: #3e0b00;
   box-sizing: content-box !important;
-
 }
 
-.all-link-in-footer i{
+.all-link-in-footer i {
   color: white;
 }
 .card-body {
@@ -268,8 +256,6 @@ li::marker{
   justify-content: center !important;
   align-items: center !important;
 }
-
-
 
 /* model styling start from here */
 
@@ -298,8 +284,6 @@ li::marker{
   height: 1rem;
   margin-bottom: -30px;
 }
-
-
 
 /* ----------------------------------------- */
 
@@ -342,7 +326,6 @@ li::marker{
   transform: scale(1.1); /* Increase the scale factor as needed */
 }
 
-
 @keyframes slide {
   0% {
     transform: translateX(0);
@@ -356,23 +339,44 @@ li::marker{
 
 @media screen and (max-width: 767px) {
   .text-of-landing-page {
-    font-size: 214%;
+    font-size: 234%;
+    padding-top: 2rem;
   }
   .span-text-of-landing-page {
-    margin-top: 1rem;
-    font-size: 67%;
+    font-size: 1.5rem;
     font-weight: 500;
     text-shadow: 3px 3px 5px black;
   }
-  .button-of-top{
+  .button-of-top {
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 2rem;
-    padding-top: 2rem;
+    gap: 1rem;
+    padding-top: 1rem;
     flex-wrap: wrap;
+  }
+  .main-head-text-of-landing-page {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    align-items: center;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #0000006e, #00000094),
+      url(./Assets/main-back.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: auto;
+  }
 
-
+  .button-of-top button {
+    width: 6.3rem;
+    padding: 1%;
+    font-size: 20px;
+    background-color: yellow;
+    color: black;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: background-color 0.5s;
   }
 
   .form-of-landing-page {
@@ -386,58 +390,29 @@ li::marker{
     align-items: center;
     animation: revealAnimationright 2s forwards;
     margin-top: -7rem;
-   
   }
-.main-text{
-  font-size: 190%;
-  font-weight: 600;
-  text-shadow: 3px 3px 3px rgb(241, 29, 29);
-}
+  .main-text {
+    font-size: 190%;
+    font-weight: 600;
+    text-shadow: 3px 3px 3px rgb(241, 29, 29);
+  }
 
-
-  .why-chose-us{
+  .why-chose-us {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
     padding-left: 4%;
   }
 
-
-.pop-up-form{
-  color: black;
-  margin-top: 0rem !important;
-}
-.Students-component ul{
-  display: flex;
-  flex-wrap: wrap;
-}
-.course{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 2% 2%;
-  padding: 1% 1%;
-  border: 1px solid black !important;
-  transition: transform 0.4s;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  height: 22rem;
-}
-
-
-}
-
-.card:hover {
-  transform: scale(1.1);
-}
-
-@media screen and (max-width: 426px) {
-  .center {
-    width: 90%;
+  .pop-up-form {
+    color: black;
+    margin-top: 0rem !important;
   }
-  .course{
+  .Students-component ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .course {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -449,15 +424,33 @@ li::marker{
     transition: transform 0.4s;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    height: 22rem;
+    height: auto;
   }
 }
 
+.card:hover {
+  transform: scale(1.1);
+}
 
-
-
-
-
+@media screen and (max-width: 426px) {
+  .center {
+    width: 90%;
+  }
+  .course {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2% 2%;
+    padding: 1% 1%;
+    border: 1px solid black !important;
+    transition: transform 0.4s;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: auto;
+  }
+}
 
 /* ------------ Thankyoupage CSS------------------------------- */
 
