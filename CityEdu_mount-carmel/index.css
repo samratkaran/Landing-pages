@@ -71,14 +71,14 @@ h1 {
   width: 12rem;
   padding: 1%;
   font-size: 30px;
-  background-color: yellow;
+  background-image: linear-gradient(to right, #49130791, #ffffff);
   color: black;
   font-weight: 600;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: background-color 0.5s;
 }
 .button-of-top button:hover {
-  background-color: #fff;
+  background-image: linear-gradient(to right, #f2e3d2, #3e0b00c4);
   color: #000;
 }
 
