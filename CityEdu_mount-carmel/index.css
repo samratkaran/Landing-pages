@@ -71,15 +71,16 @@ h1 {
   width: 12rem;
   padding: 1%;
   font-size: 30px;
-  background-image: linear-gradient(to right, #49130791, #ffffff);
+  background-color: #fff;
   color: black;
   font-weight: 600;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: background-color 0.5s;
 }
 .button-of-top button:hover {
-  background-image: linear-gradient(to right, #f2e3d2, #3e0b00c4);
+ 
   color: #000;
+  background-color: #f2e3d2;
 }
 
 .form-of-landing-page {
