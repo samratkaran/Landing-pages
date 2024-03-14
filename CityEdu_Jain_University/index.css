@@ -1,0 +1,418 @@
+.main-container-of-page {
+  overflow: hidden !important;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+h1 {
+  font-family: "Fontspring";
+  text-transform: uppercase;
+}
+
+.heder-of-city-guidde {
+  position: fixed;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3e0b00;
+  z-index: 100;
+  box-sizing: content-box !important;
+  overflow: hidden;
+}
+
+.main-head-text-of-landing-page {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  align-items: center;
+  background-size: 100%;
+  background-image: linear-gradient(to bottom, #0000009b, #000000b7),
+    url(./Assets/main-back.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100vh;
+}
+.main-text {
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  font-family: "Fontspring";
+  color: white;
+}
+.head-text-of-landing-page {
+  animation: revealAnimation 2s forwards;
+}
+
+.text-of-landing-page {
+  text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+  font-size: 570%;
+  font-weight: 700;
+}
+
+.span-text-of-landing-page {
+  font-size: 40px;
+  color: white;
+  font-weight: 200;
+  margin-top: 2rem;
+  text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+}
+.button-of-top {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.button-of-top button {
+  width: 12rem;
+  padding: 1%;
+  font-size: 30px;
+  background-color: #fff;
+  color: black;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: background-color 0.5s;
+}
+.button-of-top button:hover {
+  color: #000;
+  background-color: #f2e3d2;
+}
+
+.form-of-landing-page {
+  width: 100%;
+  background-color: #194486;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-of-landing-page input,
+button {
+  width: 80%;
+}
+
+.main-overview-of-college {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.course-and-collage {
+  display: flex;
+  gap: 5%;
+  width: 70%;
+}
+
+.head-text-of-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #042e6f;
+}
+
+.boxes-of-palcement li {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1% 1%;
+  color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.Top-Recruiters {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  animation: slide 10s linear infinite;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.Top-Recruiters img {
+  width: 20%;
+  height: 40%;
+}
+.campus-life {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  gap: 2rem;
+  padding: 0 3%;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+}
+.card-of-campus-life {
+  box-shadow: #3b1d6453 0px 4px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 17.5rem;
+  text-align: center;
+}
+.card-of-campus-life img {
+  width: 30%;
+}
+
+.Approval {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 4% 3%;
+}
+.main-Approval {
+  background-color: #194486;
+
+  margin-top: 2rem;
+}
+
+.Approval img {
+  width: 20%;
+  height: 20%;
+  padding: 3%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+li::marker {
+  color: #3e0b00;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+.why-chose-us {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer-of-page-alliance {
+  background-color: #194486;
+  box-sizing: content-box !important;
+}
+
+.all-link-in-footer i {
+  color: white;
+}
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-body button {
+  width: 30% !important;
+  height: 2rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* model styling start from here */
+
+.center {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  width: 30%;
+  text-align: center;
+  height: 80%;
+}
+
+.close-modal {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.class-model-div {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  width: 90%;
+  height: 1rem;
+  margin-bottom: -30px;
+}
+
+/* ----------------------------------------- */
+
+/* ----------------------------------------------------- */
+
+@keyframes revealAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+}
+
+@keyframes revealAnimationright {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(
+      100%
+    ); /* Start from the right side of the container */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left side of the container */
+  }
+}
+
+.all-comp-in-campus:hover {
+  transform: scale(1.1); /* Increase the scale factor as needed */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ----------------------------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+  .text-of-landing-page {
+    font-size: 230%;
+    padding-top: 1rem;
+  }
+  .span-text-of-landing-page {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 3px 3px 5px black;
+  }
+  .button-of-top {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+  }
+  .main-head-text-of-landing-page {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    align-items: center;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #0000006e, #00000094),
+      url(./Assets/main-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: auto;
+  }
+
+  .button-of-top button {
+    width: 6.3rem;
+    padding: 1%;
+    font-size: 20px;
+    background-color: yellow;
+    color: black;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: background-color 0.5s;
+  }
+
+  .form-of-landing-page {
+    margin: auto;
+    width: 90%;
+    background-color: #194486;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: revealAnimationright 2s forwards;
+    margin-top: -7rem;
+  }
+  .main-text {
+    font-size: 111%;
+    margin-right: 3rem;
+    font-weight: 500;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  }
+
+  .why-chose-us {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding-left: 4%;
+  }
+
+  .pop-up-form {
+    color: black;
+    margin-top: 0rem !important;
+  }
+  .Students-component ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* ------------ Thankyoupage CSS------------------------------- */
+
+.main-thank-you-of-landing-page {
+  background-color: rgba(228, 220, 220, 0.271);
+  border-radius: 10px;
+  text-shadow: rgba(240, 12, 12, 0.79) 2px 2px 4px;
+  color: white;
+  text-align: center;
+  animation: revealAnimationright 2s forwards;
+  padding: 2rem 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  width: 100%;
+}
