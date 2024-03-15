@@ -28,49 +28,53 @@ h1 {
 .main-head-text-of-landing-page {
   display: flex;
   justify-content: center;
-  gap: 6rem;
+  gap: 5rem;
   align-items: center;
   background-size: 100%;
-  background-image: linear-gradient(to bottom, #7e7e7e42, #2222228c),
+  background-image: linear-gradient(to bottom, #00000085, #0101018c),
     url(./Assets/back.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   overflow: hidden;
 }
-.main-text {
-  font-size: 4rem;
-  padding-bottom: 20rem;
-  font-weight: 600;
-  text-shadow: 3px 3px 3px rgb(241, 29, 29);
-  font-family: "Fontspring";
-}
+
 .head-text-of-landing-page {
   animation: revealAnimation 2s forwards;
 }
 .span-text-two {
-  font-size: 2rem;
+  font-size: 45px;
+  color: white;
+  font-weight: 200;
+  text-shadow: 3px 3px 5px black;
   text-align: center;
-  font-weight: 100;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
 }
 
 .text-of-landing-page {
   text-shadow: rgb(15, 62, 171) 3px 3px 5px;
-  font-size: 310%;
+  font-size: 350%;
   font-weight: 700;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .span-text-of-landing-page {
   font-size: 45px;
   color: white;
-  margin-top: 5rem;
+  padding-top: 2rem;
   font-weight: 200;
   text-shadow: 3px 3px 5px black;
+  text-align: center;
+}
+.button-of-top {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
 }
 .button-of-top button {
   width: 10rem;
-  padding: 2%;
-  font-size: 30px;
+  padding: 1%;
+  font-size: 35px;
   background-color: red;
   color: white;
   border: 1px solid red;
@@ -100,7 +104,7 @@ h1 {
 
 .form-of-landing-page input,
 button {
-  width: 70%;
+  width: 80%;
 }
 
 .main-overview-of-college {
@@ -162,7 +166,7 @@ button {
   font-size: 17px;
   border-radius: 6px;
   font-weight: 500;
-  color: var(--color);
+  color: #000;
 }
 
 .course:before {
@@ -185,8 +189,8 @@ button {
 }
 
 .course:hover:before {
-  top: -30px;
-  left: -30px;
+  top: -10px;
+  left: -10px;
 }
 
 .course:active:before {
@@ -377,26 +381,53 @@ li::marker {
     padding: 0% 3%;
   }
   .span-text-two {
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: justify;
+    margin-bottom: 0rem;
+  }
+  .main-head-text-of-landing-page {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #00000085, #0101018c),
+      url(./Assets/back.jpg);
+    background-repeat: no-repeat;
+    height: auto;
+    overflow: hidden;
   }
   .text-of-landing-page {
-    font-size: 154%;
-    margin-top: 3rem;
+    font-size: 161%;
+    margin-top: 1rem;
   }
   .span-text-of-landing-page {
-    margin-top: 1rem;
-    font-size: 87%;
+    margin-top: 0rem;
+    font-size: 159%;
     font-weight: 500;
     text-shadow: 3px 3px 5px black;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    text-align: justify;
   }
   .button-of-top {
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     padding-top: 2rem;
     flex-wrap: wrap;
+  }
+  .button-of-top button {
+    width: 4.3rem;
+    padding: 2%;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: background-color 0.5s;
   }
 
   .form-of-landing-page {

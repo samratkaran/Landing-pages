@@ -20,6 +20,7 @@ closeModalButton.addEventListener("click", () => {
   console.log("Close me");
   modal.style.display = "none";
 });
+// ----------------------------
 
 // -------------------------------------mailing service-----------------------
 
@@ -153,6 +154,7 @@ const callingApi = (value) => {
         <br>
         Our Counsellors will contact you within 24hrs to 48hrs</h3>
     </div>`;
+      document.querySelector(".spinner").style.display = "none";
     })
     .catch((error) => {
       // console.error("Error during POST request:", error);
@@ -165,6 +167,7 @@ const form = document.getElementById("myFirstForm");
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
+  document.querySelector(".spinner").style.display = "block";
   const value = {
     name: nameValue,
     email: emailValue,
@@ -174,7 +177,7 @@ form.addEventListener("submit", function (event) {
     college: "VITEEE 2024",
   };
 
-  callingApi(value);
+  // callingApi(value);
 });
 
 // -----------------------------------------------
@@ -182,6 +185,8 @@ form.addEventListener("submit", function (event) {
 const modalForm = document.getElementById("mySecondForm");
 modalForm.addEventListener("submit", function (event) {
   event.preventDefault();
+  document.querySelector(".spinner").style.display = "block";
+
   modal.style.display = "none";
   const value = {
     name: modalnameValue,
@@ -191,5 +196,7 @@ modalForm.addEventListener("submit", function (event) {
     course: modalcourseValue,
     college: "VITEEE 2024",
   };
-  callingApi(value);
+  // callingApi(value);
 });
+
+// -------------------spinner

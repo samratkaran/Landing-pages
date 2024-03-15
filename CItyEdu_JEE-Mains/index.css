@@ -16,7 +16,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #0c0c0c;
   z-index: 100;
   box-sizing: content-box !important;
   overflow: hidden;
@@ -31,8 +31,9 @@ h1 {
   gap: 6rem;
   align-items: center;
   background-size: 100%;
-  background-image: linear-gradient(to bottom, #0f0f0fc1, #1a19198c),
-    url(./Assets/main-back.jpg);
+  /* background-image: linear-gradient(to bottom, #0f0f0fc1, #1a19198c),
+    url(./Assets/main-back.jpg); */
+  background-image: url(./Assets/main-back.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -90,7 +91,7 @@ h1 {
 
 .form-of-landing-page {
   width: 100%;
-  background-color: #003264;
+  background: linear-gradient(90deg, #5151cee7, #c711a3de);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -121,7 +122,10 @@ button {
   align-items: center;
   margin: 2rem 0;
   text-align: center;
-  color: #023363;
+  background: linear-gradient(90deg, #333399, #ff00cc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .college-all {
@@ -166,15 +170,16 @@ button {
 }
 
 .all-mba-college-with-image {
-  margin: auto;
-
+  /* margin: auto; */
   display: flex;
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
   gap: 2%;
+  padding: 0% 2%;
 }
 .card {
+  margin: auto;
   margin-bottom: 3%;
 }
 
@@ -251,19 +256,20 @@ td {
 }
 .campus-life {
   display: flex;
-  justify-content: center;
-  margin-bottom: 5%;
-  gap: 1rem;
-  padding: 0 3%;
+  margin: auto;
+  gap: 1.5rem;
+  padding: 0 6%;
   flex-wrap: wrap;
 }
+
 .card-of-campus-life {
-  box-shadow: #3b1d6453 0px 4px 5px;
+  box-shadow: #09090953 0px 4px 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  margin: auto;
+  padding: 0% 4%;
   align-items: center;
-  width: 17.5rem;
+  width: 22rem;
   text-align: center;
   gap: 1rem;
 }
@@ -272,7 +278,7 @@ td {
 }
 
 li::marker {
-  color: #0012d4;
+  color: #9800d4;
 }
 
 .why-chose-us {
@@ -281,7 +287,7 @@ li::marker {
 }
 
 .footer-of-page-alliance {
-  background-color: #901d78;
+  background-color: #2a2a2a;
 }
 
 .all-link-in-footer i {

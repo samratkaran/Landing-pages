@@ -47,7 +47,7 @@ h1 {
 
 .text-of-landing-page {
   text-shadow: rgb(0, 0, 0) 3px 3px 5px;
-  font-size: 620%;
+  font-size: 520%;
   font-weight: 700;
 }
 
@@ -78,7 +78,6 @@ h1 {
   transition: background-color 0.5s;
 }
 .button-of-top button:hover {
- 
   color: #000;
   background-color: #f2e3d2;
 }
