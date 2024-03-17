@@ -48,7 +48,7 @@ h1 {
 
 .text-of-landing-page {
   text-shadow: rgb(0, 0, 0) 3px 3px 5px;
-  font-size: 420%;
+  font-size: 350%;
   font-weight: 700;
 }
 
@@ -108,6 +108,11 @@ h1 {
 button {
   width: 80%;
 }
+.main-overview-of-college {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
 
 .head-text-of-all {
   display: flex;
@@ -121,7 +126,7 @@ button {
 
 .boxes-of-palcement p {
   display: flex;
-  height: 11rem;
+  height: 10rem;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 3% 3%;

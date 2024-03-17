@@ -378,7 +378,7 @@ td {
   .button-of-top button {
     width: 7rem;
   }
-  .second-class {
+  /* .second-class {
     font-size: 120%;
     margin-right: 2rem;
   }
@@ -386,9 +386,9 @@ td {
     color: yellow;
     margin-top: 2rem;
     font-size: 1.6rem;
-  }
+  } */
 
-  .form-of-landing-page {
+  /* .form-of-landing-page {
     margin: auto;
     width: 90%;
     background-color: #fffff5;
@@ -399,7 +399,7 @@ td {
     align-items: center;
     animation: revealAnimationright 2s forwards;
     margin-top: -7rem;
-  }
+  } */
 
   .why-chose-us {
     display: flex;
