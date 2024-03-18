@@ -30,11 +30,12 @@
 }
 
 .span-text-of-landing-page {
-  font-size: 20px;
+  font-size: 30px;
+  padding-top: 2rem;
   color: white;
 }
 .text-of-landing-page {
-  font-size: 5rem;
+  font-size: 5.5rem;
   text-shadow: 2px 2px 2px #000000de;
 }
 
@@ -44,6 +45,16 @@
 
   text-align: center;
   color: #900f0f;
+}
+.new-text {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  width: 60%;
+  margin-left: 20%;
 }
 
 .all-program-cards {
@@ -59,12 +70,13 @@
   flex-direction: column;
 
   width: 24rem;
-  height: 25rem;
+  height: 27rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .program-cards li {
   font-size: 1.5rem;
   font-weight: 600;
+  list-style: none;
 }
 .program-cards div {
   background-color: #900f0f !important;
@@ -285,13 +297,29 @@ button {
     animation: revealAnimationright 2s forwards;
     margin-top: -4rem;
   }
+  .main-head-text-of-landing-page {
+    margin-top: 3rem !important;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    align-items: baseline;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #00000069, #00000069),
+      url("./Assets/back-image.jpg");
+    background-repeat: no-repeat;
+    height: auto;
+  }
 
   .text-of-landing-page {
-    font-size: 200%;
+    font-size: 210%;
     margin-top: -1rem;
   }
+  .new-text {
+    width: 90%;
+    margin-left: 1rem;
+  }
   .span-text-of-landing-page {
-    font-size: 100%;
+    font-size: 110%;
   }
 
   .pop-up-form {
