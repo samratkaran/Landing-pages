@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
@@ -16,8 +16,6 @@
   box-sizing: content-box !important;
 }
 
-
-
 .main-head-text-of-landing-page {
   margin-top: 3rem !important;
   display: flex;
@@ -25,22 +23,17 @@
   gap: 6rem;
   align-items: baseline;
   background-size: 100%;
-  background-image: linear-gradient(
-    to bottom,
-    #00000069,
-    #00000069
-  ),
-  url("./Assets/back-image.jpg");
+  background-image: linear-gradient(to bottom, #00000069, #00000069),
+    url("./Assets/back-image.jpg");
   background-repeat: no-repeat;
+  height: 100vh;
 }
-
 
 .span-text-of-landing-page {
   font-size: 20px;
   color: white;
-
 }
-.text-of-landing-page{
+.text-of-landing-page {
   font-size: 5rem;
   text-shadow: 2px 2px 2px #000000de;
 }
@@ -48,105 +41,99 @@
 .head-text-of-all {
   text-align: center;
   padding: 2rem 0rem;
-  
+
   text-align: center;
   color: #900f0f;
 }
 
-
-
-
-.all-program-cards{
+.all-program-cards {
   margin: auto;
   display: flex;
   justify-content: center;
-  gap: 2rem;  
+  gap: 2rem;
   align-items: center;
   flex-wrap: wrap;
-
 }
 
-.program-cards{
+.program-cards {
   flex-direction: column;
 
-  width: 19rem;
-  height: 21rem;
+  width: 24rem;
+  height: 25rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
-.program-cards div{
+.program-cards li {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.program-cards div {
   background-color: #900f0f !important;
   margin-bottom: 1rem;
 }
-.program-cards button{
+.program-cards button {
   width: 50%;
   margin-left: 25%;
   background-color: #282646;
   color: white;
 }
-.main-why-alliance{
+.main-why-alliance {
   display: flex;
   justify-content: center;
   align-items: start;
   margin: auto;
- 
 }
 
-.why-alliance li{
+.why-alliance li {
   font-size: 1.2rem;
 }
-.rank-and-content{
+.rank-and-content {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 1.2rem;
   flex-wrap: wrap;
 }
-.rank-main{
+.rank-main {
   width: 40%;
 }
-.image-campus-and-details{
+.image-campus-and-details {
   margin: auto;
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
-  align-items:start;
+  align-items: start;
   gap: 5%;
-
 }
-.all-buttons-of-infra{
+.all-buttons-of-infra {
   display: flex;
-justify-content: space-between;
-align-items: center;
-flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 
-margin-bottom: 3rem;
-
+  margin-bottom: 3rem;
 }
-.all-buttons-of-infra button{
+.all-buttons-of-infra button {
   width: 12%;
   border: none;
   text-decoration: none;
   background-color: transparent;
-  border-bottom: 2px solid transparent; 
-      transition: border-bottom 0.5s ease;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s ease;
 }
-.all-buttons-of-infra button:hover{
+.all-buttons-of-infra button:hover {
   border-bottom: 2px solid maroon;
 }
-.campus-and-details p{
+.campus-and-details p {
   font-size: 80%;
 }
 
-.footer-of-page-alliance{
-  
-
-  background-color: #900f0f ;
+.footer-of-page-alliance {
+  background-color: #900f0f;
   width: 100vw !important;
   box-sizing: border-box !important;
 }
 
-.all-link-in-footer i{
+.all-link-in-footer i {
   color: white;
 }
 
@@ -190,22 +177,6 @@ margin-bottom: 3rem;
   margin-bottom: 2rem !important;
   width: 100% !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .form-of-landing-page {
   width: 100%;
@@ -258,48 +229,6 @@ button {
   transform: translateY(4px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  */
 /* ----------------------------------------------------- */
 
@@ -343,7 +272,6 @@ button {
 /* ----------------------------------------------------------------------- */
 
 @media screen and (max-width: 767px) {
- 
   .form-of-landing-page {
     margin: auto;
     color: white;
@@ -356,7 +284,6 @@ button {
     align-items: center;
     animation: revealAnimationright 2s forwards;
     margin-top: -4rem;
-   
   }
 
   .text-of-landing-page {
@@ -367,69 +294,55 @@ button {
     font-size: 100%;
   }
 
-
-  .pop-up-form{
-
+  .pop-up-form {
     margin-top: 0rem !important;
-
   }
-.memorial-image-of-head{
-  width: 100%;
+  .memorial-image-of-head {
+    width: 100%;
+  }
+
+  .image-campus-and-details {
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+
+  .image-campus-and-details {
+    margin: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+
+  .all-buttons-of-infra button {
+    width: 39%;
+  }
+
+  .rank-and-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+  }
+
+  .center-main {
+    position: fixed !important;
+    top: 55% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    color: white !important;
+    width: 90% !important;
+    text-align: center !important;
+    height: 80% !important;
+  }
 }
-
-.image-campus-and-details{
-  margin: auto;
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-  gap: 5%;
-
-}
-
-.image-campus-and-details{
-  margin: auto;
-  margin-bottom: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  gap: 5%;
-
-}
-
-.all-buttons-of-infra button{
-  width: 39%;
-}
-
-.rank-and-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.2rem;
-  flex-wrap: wrap;
-}
-
-.center-main {
- 
-  position: fixed !important;
-  top: 55% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  color: white !important;
-  width: 90% !important;
-  text-align: center !important;
-  height: 80% !important;
-}
-
-}
-
-
-
-
-
-
-
 
 /* ------------ Thankyoupage CSS------------------------------- */
 
