@@ -74,3 +74,135 @@ li {
 .why-chose-us-image {
   width: 80%;
 }
+.course-of-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.course-of-page p {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 2rem 3rem;
+  width: 14rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.course-of-page p:hover {
+  background: linear-gradient(to bottom, #0986d4b8, #00ffea91);
+  color: #000;
+}
+.eligibility-of-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.eligibility-of-page div {
+  display: grid;
+  gap: 1rem;
+  width: 28rem;
+  height: 23rem;
+  text-align: center;
+  padding: 2% 2%;
+  position: relative;
+  border: 2px ridge #149cea;
+  outline: none;
+  background-color: transparent;
+  transition: 1s;
+  border-radius: 0.3em;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+.eligibility-of-page div::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.eligibility-of-page div::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+
+  transition: 0.5s;
+}
+
+.eligibility-of-page div:hover::before,
+.eligibility-of-page div:hover::after {
+  transform: scale(0);
+}
+
+.eligibility-of-page div:hover {
+  box-shadow: inset 0px 0px 25px #1479ea;
+}
+.Top-Recruiters {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  animation: slide 8s linear infinite;
+  object-fit: cover;
+  margin-top: -2rem !important;
+}
+
+.Top-Recruiters img {
+  width: 30%;
+  height: 50%;
+}
+.main-campus-life {
+  background-color: #f8eeeb;
+  padding: 4% 0%;
+}
+.campus-life {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.card-of-campus-life {
+  box-shadow: #3b1d6453 0px 4px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 19rem;
+  text-align: center;
+  background-color: #0096a1b8;
+  padding: 1% 1%;
+  color: white;
+  font-weight: 600;
+}
+.card-of-campus-life img {
+  width: 35%;
+}
+.card-of-campus-life h6 {
+  font-size: 1.2rem;
+}
+
+/* ------------------------- */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

@@ -2,6 +2,7 @@ import "./Main.css";
 import Form from "./From/Form";
 import HeadText from "./HeadText/HeadText";
 import { Fade } from "react-awesome-reveal";
+import Accordion from "react-bootstrap/Accordion";
 
 const Main = () => {
   return (
@@ -117,6 +118,221 @@ const Main = () => {
             </ul>
           </div>
         </div>
+        <HeadText value={"Courses Offered"} />
+        <div className="row">
+          <div className="col-md-12">
+            <Fade direction="right" delay={200}>
+              <div className="course-of-page">
+                <p>B.Tech</p>
+                <p>B.Arch</p>
+                <p>B.Com</p>
+                <p>BBA</p>
+                <p>B.A.-LL.B</p>
+                <p>BBA-LL.B</p>
+                <p>M.Tech</p>
+                <p> MCA</p>
+                <p> MBA</p>
+                <p> M.Sc</p>
+              </div>
+            </Fade>
+          </div>
+        </div>
+        <HeadText value={"Course-Wise Eligibility"} />
+        <div className="row">
+          <div className="col-md-12 m-auto eligibility-of-page ">
+            <div>
+              <h2>B.Tech</h2>
+              <p>
+                PUC / 10+2 (HSC) qualifiers with Physics and Mathematics
+                compulsory subjects along with one of Chemistry / Biotechnology
+                / Biology / Computer Science / Electronics / Technical
+                Vocational subjects. Minimum of 45% aggregate marks in 10+2 (40%
+                for reserved category candidates). Valid score in REVA CET.
+              </p>
+            </div>
+            <div>
+              <h2>B.Arch</h2>
+              <p>
+                10+2 (HSC)/ Pre-University Course or equivalent examination with
+                minimum 50% marks in PCM and 50% marks in aggregate. B.Com/BBA:
+                Passed in PUC / 10+2 (HSC) from any recognized Board / Council
+                or any other qualification recognized as equivalent.
+              </p>
+            </div>
+            <div>
+              <h2>B.A.-LL.B</h2>
+              <p>
+                Passed in PUC/ 10+2 (HSC) or equivalent with a minimum of 45%
+                aggregate marks (40% for reserved category candidates). Valid
+                score in REVA CLAT.
+              </p>
+            </div>
+            <div>
+              <h2>M.Tech</h2>
+              <p>
+                B.E / B.Tech degree with a minimum of 50% marks in aggregate
+                (45% for reserved category candidates). Valid score in PGCET.
+              </p>
+            </div>
+            <div>
+              <h2>MCA</h2>
+              <p>
+                Graduation with Mathematics / Statistics / Computer Science
+                Programming / Computer Application / Business Mathematics/
+                Business Statistics as one of the major/optional subjects with a
+                minimum of 50% marks (45% for reserved category candidates).
+              </p>
+            </div>
+            <div>
+              <h2>MBA</h2>
+              <p>
+                Graduation in any stream or B.E/ B.Tech with 50% marks (45% for
+                reserved category candidates). Valid score in REVA MAT/ CAT/
+                MAT/ CMAT.
+              </p>
+            </div>
+            <div>
+              <h2>M.Sc</h2>
+              <p>
+                Graduation in Science with a minimum of 45% marks (40% for
+                reserved category candidates).
+              </p>
+            </div>
+          </div>
+        </div>
+        <HeadText value={"top Recruiters"} />
+        <div
+          className="row main-Top-Recruiters"
+          style={{ overflowX: "hidden" }}
+        >
+          <div className="col-md-12 Top-Recruiters">
+            <img src={require("../Assets/slide-image/02.png")} alt="" />
+            <img src={require("../Assets/slide-image/05.png")} alt="" />
+            <img src={require("../Assets/slide-image/06.png")} alt="" />
+            <img src={require("../Assets/slide-image/07.png")} alt="" />
+            <img src={require("../Assets/slide-image/10.png")} alt="" />
+            <img src={require("../Assets/slide-image/13.png")} alt="" />
+            <img src={require("../Assets/slide-image/14.png")} alt="" />
+            <img src={require("../Assets/slide-image/15.png")} alt="" />
+          </div>
+        </div>
+        <HeadText value={"Campus Life"} />
+        <Fade delay={300} direction="left">
+          <div className="row main-campus-life">
+            <div className="col-md-12 campus-life">
+              <div class="card-of-campus-life">
+                {" "}
+                <img src={require("../Assets/hostel.png")} alt="" />{" "}
+                <h6> HOSTEL ACCOMMODATION</h6>
+              </div>
+              <div class="card-of-campus-life">
+                {" "}
+                <img src={require("../Assets/library.png")} alt="" />{" "}
+                <h6>LIBRARY</h6>
+              </div>
+              <div class="card-of-campus-life">
+                {" "}
+                <img src={require("../Assets/sports.png")} alt="" />{" "}
+                <h6>SPORTS COMPLEX</h6>
+              </div>
+              <div class="card-of-campus-life">
+                {" "}
+                <img src={require("../Assets/movie-theater.png")} alt="" />{" "}
+                <h6>AUDITORIUM's</h6>
+              </div>
+              <div class="card-of-campus-life">
+                {" "}
+                <img src={require("../Assets/lab.png")} alt="" /> <h6>LABS</h6>
+              </div>
+              <div class="card-of-campus-life">
+                {" "}
+                <img src={require("../Assets/cafe.png")} alt="" />{" "}
+                <h6>CAFETERIA</h6>
+              </div>
+              <div class="card-of-campus-life">
+                {" "}
+                <img src={require("../Assets/gym.png")} alt="" /> <h6>GYM</h6>
+              </div>
+              <div class="card-of-campus-life">
+                {" "}
+                <img
+                  src={require("../Assets/healthcare (1).png")}
+                  alt=""
+                />{" "}
+                <h6>MEDICAL FACILITIES</h6>
+              </div>
+              <div class="card-of-campus-life">
+                {" "}
+                <img src={require("../Assets/wifi.png")} alt="" />{" "}
+                <h6>WI-FI CAMPUS</h6>
+              </div>
+              <div class="card-of-campus-life">
+                {" "}
+                <img src={require("../Assets/shuttle.png")} alt="" />{" "}
+                <h6>SHUTTEL SERVICE</h6>
+              </div>
+              <div class="card-of-campus-life">
+                {" "}
+                <img
+                  src={require("../Assets/convenience-store.png")}
+                  alt=""
+                />{" "}
+                <h6>CONVERIENCE STORE</h6>
+              </div>
+            </div>
+          </div>
+        </Fade>
+        <HeadText value={"FAQs"}/>
+        <div className="row">
+          <div className="col-md-12">
+            <Accordion defaultActiveKey="0">
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>
+                  What are the eligibility criteria for admission to Reva
+                  University?
+                </Accordion.Header>
+                <Accordion.Body>
+                  Eligibility criteria vary depending on the course applied for.
+                  Generally, candidates must meet academic requirements
+                  specified by the university, such as minimum scores in
+                  qualifying exams like 10+2 or equivalent.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="1">
+                <Accordion.Header>
+                  What is the placement record of Reva University?
+                </Accordion.Header>
+                <Accordion.Body>
+                  Reva University has a strong track record of placements, with
+                  many top companies visiting the campus for recruitment.
+                  Details regarding the number of job offers made, highest
+                  packages offered, and average salary packages are important
+                  considerations for prospective students.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="2">
+                <Accordion.Header>
+                  Are scholarships available for students at Reva University?
+                </Accordion.Header>
+                <Accordion.Body>
+                  Reva University offers scholarships based on merit, sports
+                  achievements, and other criteria. Understanding the
+                  scholarship opportunities and eligibility criteria can be
+                  crucial for students seeking financial assistance.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="3">
+                <Accordion.Header>
+                  What kind of facilities does Reva University provide for
+                  students?
+                </Accordion.Header>
+                <Accordion.Body>
+                Assessing the infrastructure and facilities available on campus, such as libraries, labs, sports complexes, hostels, and recreational amenities, helps students gauge the overall learning and living environment at the university.
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </div>
+        </div>
       </div>
     </>
   );
@@ -128,6 +344,6 @@ export default Main;
 
 // {show ? <Modal cancel = {setShow}/> : null}
 
-{
-  /* <button onClick={() => setShow(true)}>Fuck you</button> */
-}
+// {
+//   /* <button onClick={() => setShow(true)}>Fuck you</button> */
+// }
