@@ -1,7 +1,7 @@
 import "./Main.css";
 import Form from "./From/Form";
 import HeadText from "./HeadText/HeadText";
-import { Fade, Flip } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Main = () => {
   return (
@@ -67,7 +67,56 @@ const Main = () => {
             </div>
           </div>
         </Fade>
-        <div></div>
+        <HeadText value="Why Choose Reva?" />
+        <div className="row why-chose-us m-auto">
+          <div className="col-md-3 d-none d-md-block">
+            <img
+              src={require("../Assets/f14d6c0a5773675a110f0fbb4988efa6-removebg-preview.png")}
+              alt=""
+              className="why-chose-us-image"
+            />
+          </div>
+          <div className="col-md-5">
+            <ul
+              style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
+            >
+              <Fade delay={200}>
+                <li>Diverse academic programs across disciplines.</li>
+              </Fade>
+              <Fade delay={240}>
+                <li>Accredited by NAAC with an 'A' Grade.</li>
+              </Fade>
+              <Fade delay={280}>
+                <li>
+                  Strong industry connections for internships and placements.
+                </li>
+              </Fade>
+              <Fade delay={320}>
+                <li>State-of-the-art infrastructure with modern facilities.</li>
+              </Fade>
+              <Fade delay={360}>
+                <li>Experienced faculty providing quality education.</li>
+              </Fade>
+              <Fade delay={400}>
+                <li>Research opportunities for students.</li>
+              </Fade>
+              <Fade delay={440}>
+                <li>Vibrant campus life with clubs and cultural events.</li>
+              </Fade>
+              <Fade delay={480}>
+                <li>
+                  Strategic location in Bangalore for career opportunities.
+                </li>
+              </Fade>
+              <Fade delay={520}>
+                <li>Scholarships and financial aid available.</li>
+              </Fade>
+              <Fade delay={560}>
+                <li>Emphasis on holistic development beyond academics.</li>
+              </Fade>
+            </ul>
+          </div>
+        </div>
       </div>
     </>
   );

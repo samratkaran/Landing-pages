@@ -59,3 +59,18 @@ li {
   padding: 1rem 1rem;
   object-fit: contain;
 }
+
+.border-image-container {
+  border: 20px solid transparent;
+  padding: 15px;
+  border-image: url("./ranking-border.png") 30 round;
+  border-color: aqua;
+}
+.why-chose-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why-chose-us-image {
+  width: 80%;
+}
