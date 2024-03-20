@@ -1,0 +1,7 @@
+.main-footer {
+  /* overflow-x: hidden; */
+  background-image: linear-gradient(to bottom, #000000d0, #000000e3),
+    url(../../Assets/footer-2.svg);
+  /* background-repeat: no-repeat; */
+  background-size: contain;
+}

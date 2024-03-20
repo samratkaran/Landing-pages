@@ -1,0 +1,61 @@
+.main-container {
+  padding: 0% 2%;
+  margin-top: 2rem;
+}
+h1 {
+  text-transform: uppercase;
+}
+p,
+li {
+  font-size: 1.2rem;
+}
+
+.main-head-text-of-landing-page {
+  padding-top: 7rem !important;
+  padding: 0% 2%;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  align-items: baseline;
+  background-image: linear-gradient(to bottom, #00000029, #00000021),
+    url(../Assets/main-back.jpg);
+  /* background-image: url(./Assets/Ayurvedic-Medicine-Manufacturer-in-Kanpur.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+}
+.head-text-of-page {
+  font-size: 600%;
+  font-weight: 600;
+  text-shadow: black 4px 4px 8px;
+}
+
+.main-overview-of-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  text-align: justify;
+  background-color: #f8eeeb;
+  padding: 2rem 0rem;
+  border: 1px solid black;
+}
+.overview-image {
+  width: 95%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.approval-and-acredation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 1rem; */
+  flex-wrap: wrap;
+}
+.approval-and-acredation img {
+  width: 15rem;
+  height: 15rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem 1rem;
+  object-fit: contain;
+}

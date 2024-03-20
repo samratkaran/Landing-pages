@@ -1,0 +1,8 @@
+.main-text h1 {
+  text-align: center;
+  font-size: 4rem !important;
+  font-weight: 700;
+  color: rgb(53, 48, 48);
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
