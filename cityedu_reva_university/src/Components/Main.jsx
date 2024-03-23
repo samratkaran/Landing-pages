@@ -217,7 +217,7 @@ const Main = () => {
           </div>
         </div>
         <HeadText value={"Campus Life"} />
-        <Fade delay={300} direction="left">
+        <Fade delay={500} direction="left">
           <div className="row main-campus-life">
             <div className="col-md-12 campus-life">
               <div class="card-of-campus-life">
@@ -282,7 +282,7 @@ const Main = () => {
             </div>
           </div>
         </Fade>
-        <HeadText value={"FAQs"}/>
+        <HeadText value={"FAQs"} />
         <div className="row">
           <div className="col-md-12">
             <Accordion defaultActiveKey="0">
@@ -327,7 +327,10 @@ const Main = () => {
                   students?
                 </Accordion.Header>
                 <Accordion.Body>
-                Assessing the infrastructure and facilities available on campus, such as libraries, labs, sports complexes, hostels, and recreational amenities, helps students gauge the overall learning and living environment at the university.
+                  Assessing the infrastructure and facilities available on
+                  campus, such as libraries, labs, sports complexes, hostels,
+                  and recreational amenities, helps students gauge the overall
+                  learning and living environment at the university.
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
