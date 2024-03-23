@@ -1,7 +1,7 @@
 import "./Main.css";
 import Form from "./From/Form";
 import HeadText from "./HeadText/HeadText";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Rotate } from "react-awesome-reveal";
 import Accordion from "react-bootstrap/Accordion";
 
 const Main = () => {
@@ -334,6 +334,145 @@ const Main = () => {
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
+          </div>
+        </div>
+        <HeadText value={"Ranks and Awards"} />
+        <div
+          className="row d-flex justify-content-center align-items-center gap-5"
+          style={{ flexWrap: "wrap" }}
+        >
+          <div className="col-md-5 ranks">
+            <h2 className="pb-4"> QS Asian University Rankings</h2>
+            <p>
+              Ranked 6th among all private universities in Karnataka in 2023
+            </p>
+            <p>
+              Secured the 47th position among all private universities in India
+            </p>
+          </div>
+          <div className="col-md-5 ranks">
+            <h2 className="pb-4"> IIRF Rankings</h2>
+            <p>
+              Ranked 17th in the country and 5th in Karnataka for Architecture.
+            </p>
+            <p>
+              Ranked 18th in the country and 4th in Karnataka for Law in 2023
+            </p>
+          </div>
+          <div className="col-md-5 ranks">
+            <h2 className="pb-4"> FORTUNE India's Best B-Schools Rankings</h2>
+            <p>Ranked 7th in Bangalore City.</p>
+            <p>Ranked 92nd pan India.</p>
+          </div>
+          <div className="col-md-5 ranks">
+            <h2 className="pb-4"> QS I-Gauge Ratings</h2>
+            <p>"Diamond" University Rating for Overall Excellence</p>
+            <p>
+              "Diamond" University Ratings for Employability, Diversity &
+              Accessibility, Facilities, and Social Responsibility.
+            </p>
+          </div>
+        </div>
+        <HeadText value={"Placement"} />
+        <div className="row m-auto">
+          <div class="col-md-12 m-auto">
+            <div class="Students-component ">
+              <p
+                style={{ textAlign: "justify" }}
+                className="col-md-11 m-auto pb-4 "
+              >
+                The Placement and Training Cell at REVA University is committed
+                to facilitating the professional growth and career aspirations
+                of its students. Through various initiatives and collaborations,
+                the university ensures that graduating students are equipped
+                with the skills and opportunities necessary to embark on
+                successful career paths. Placement Statistics 2023:
+              </p>
+              <ul
+                className="boxes-of-palcement d-flex justify-content-center gap-5"
+                style={{ paddingLeft: "1px", flexWrap: "wrap" }}
+              >
+                <li class="c1" style={{ backgroundColor: "#da2032" }}>
+                  {" "}
+                  <span style={{ fontSize: "2.5rem", fontWeight: 700 }}>
+                    3512{" "}
+                  </span>{" "}
+                  Total No. of Offers
+                </li>
+                <li class="c2" style={{ backgroundColor: "#a61a32" }}>
+                  {" "}
+                  <span style={{ fontSize: "2.5rem", fontWeight: 700 }}>
+                    <i class="fa fa-inr" aria-hidden="true"></i> 45{" "}
+                    <small style={{ fontSize: "1.1rem !important" }}>LPA</small>
+                  </span>{" "}
+                  Highest Domestic Package{" "}
+                </li>
+                <li class="c3" style={{ backgroundColor: "#034ea2" }}>
+                  {" "}
+                  <span style={{ fontSize: "2.5rem", fontWeight: 700 }}>
+                    <i class="fa fa-inr" aria-hidden="true"></i> 58
+                    <small style={{ fontSize: "1.1rem !important" }}>LPA</small>
+                  </span>{" "}
+                  Highest International Package{" "}
+                </li>
+                <li class="c4" style={{ backgroundColor: "#00abe6" }}>
+                  {" "}
+                  <span style={{ fontSize: "2.5rem", fontWeight: 700 }}>
+                    <i class="fa fa-inr" aria-hidden="true"></i> 4.5- 5.5{" "}
+                    <small style={{ fontSize: "1.1rem !important" }}>LPA</small>
+                  </span>{" "}
+                  Average Package{" "}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <HeadText value={"Scholarships"} />
+        <div className="row">
+          <div className="col-md-12 scolership">
+            <Fade direction="right" delay={400}>
+              <p>
+                REVA University offers scholarships based on merit, sports,
+                defense, PH quota, and other categories.
+              </p>
+            </Fade>
+            <Fade direction="left" delay={800}>
+              <p>
+                Scholarship criteria are determined by the university's
+                eligibility standards.
+              </p>
+            </Fade>
+            <Fade direction="right" delay={1200}>
+              <p>
+                K-CET rank-based scholarships range from 100% fee waiver for
+                ranks 1-2000 to 20% for ranks 6001-8000.
+              </p>
+            </Fade>
+            <Fade direction="left" delay={1600}>
+              <p>
+                Merit scholarships vary from INR 25,000 for technical to INR
+                10,000 for non-technical disciplines.
+              </p>
+            </Fade>
+            <Fade direction="left" delay={2000}>
+              <p>
+                Sports scholarships are available for state, national, and
+                international levels, with percentages ranging from 50% for
+                international to 15% for state championships.
+              </p>
+            </Fade>
+          </div>
+        </div>
+        <div className="row main-contact-us mt-5 mb-5">
+          <div className="col-md-12 contact-us p-5">
+            <h1 style={{ color: "white" }}>
+              To learn more about the Admission and selection process, contact
+              us now!
+            </h1>
+            <button className="contact-button" style={{ width: "14rem" }}>
+              {" "}
+              Click Herer!
+            </button>
           </div>
         </div>
       </div>

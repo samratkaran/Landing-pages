@@ -107,11 +107,6 @@ const Form = () => {
             <button type="submit" class="btn btn-warning button-of-form">
               Apply Now
             </button>
-            <b>
-              <h4 style={{ color: "white" }}>
-                For More Info - <b>9427 700 700</b>
-              </h4>
-            </b>
           </form>
         </div>
       ) : (
