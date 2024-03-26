@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Modal.css";
 import { handleSubmit } from "../utils/PostMethod";
 
-const ModalForm = ({cancel}) => {
+const ModalForm = ({ cancel }) => {
   const [collegeData, setcollegeData] = useState({
     name: "",
     email: "",
@@ -33,7 +33,7 @@ const ModalForm = ({cancel}) => {
   };
 
   return (
-    <div>
+    <div className="col-md-2 m-auto form ">
       {showform ? (
         <div
           class=" mb-5  main-form-of-landing-page  "
@@ -51,7 +51,7 @@ const ModalForm = ({cancel}) => {
                 width: "90%",
                 cursor: "pointer",
               }}
-              onClick={()=>cancel(false)}
+              onClick={() => cancel(false)}
             >
               X
             </h2>

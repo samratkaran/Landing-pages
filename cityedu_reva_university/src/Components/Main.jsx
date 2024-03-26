@@ -1,21 +1,33 @@
 import "./Main.css";
 import Form from "./From/Form";
 import HeadText from "./HeadText/HeadText";
-import { Fade, Rotate } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import Accordion from "react-bootstrap/Accordion";
+import { useState, useEffect } from "react";
+import Modal from "./Modal/Modal";
 
 const Main = () => {
+  const [show, setShow] = useState(false);
+
+  // const [showModal, setShowModal] = useState(false);
+
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setShowModal(true);
+  //   }, 5000); // 20 seconds in milliseconds
+
+  //   // Clear the interval when the component unmounts
+  //   return () => clearInterval(timer);
+  // }, []);
+
   return (
     <>
+      {/* {showModal && <Modal cancel={setShow} />} */}
       <div className="row main-head-text-of-landing-page">
         <div className="col-md-8 text-white">
-          <p className="head-text-of-page">REVA UNIVERSITY</p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-            maxime eaque soluta minus ratione temporibus earum fuga, quos quam
-            expedita dolores laborum saepe molestiae nam voluptates, corporis
-            assumenda consequuntur sequi.
-          </p>
+          <p className="head-text-of-page">REVA </p>
+          <p className="second-head-text-of-page"> UNIVERSITY</p>
+          <p className="span-text-of-page">Admission Open 2024-25</p>
         </div>
 
         <div className="col-md-3">
@@ -23,9 +35,17 @@ const Main = () => {
         </div>
       </div>
       <div className="main-container mb-5">
-        <HeadText value="overview" />
-
         <div className="row main-overview-of-page">
+          <h1
+            style={{
+              textAlign: "center",
+              fontWeight: "700",
+              color: "rgb(53, 48, 48)",
+              fontSize: "4rem",
+            }}
+          >
+            OVERVIEW
+          </h1>
           <div className="col-md-4">
             {" "}
             <img
@@ -55,69 +75,6 @@ const Main = () => {
             </p>
           </div>
         </div>
-
-        <HeadText value="Approvals and Accreditations" />
-        <Fade delay={250}>
-          <div className="row main-approval-and-acredation">
-            <div className="col-md-12 approval-and-acredation">
-              <img src={require("../Assets/NACC B+.jpg")} alt="" />
-              <img src={require("../Assets/NBA.jpg")} alt="" />
-              <img src={require("../Assets/NIRF.jpg")} alt="" />
-              <img src={require("../Assets/AICTE.png")} alt="" />
-              <img src={require("../Assets/ugc-removebg-preview.png")} alt="" />
-            </div>
-          </div>
-        </Fade>
-        <HeadText value="Why Choose Reva?" />
-        <div className="row why-chose-us m-auto">
-          <div className="col-md-3 d-none d-md-block">
-            <img
-              src={require("../Assets/f14d6c0a5773675a110f0fbb4988efa6-removebg-preview.png")}
-              alt=""
-              className="why-chose-us-image"
-            />
-          </div>
-          <div className="col-md-5">
-            <ul
-              style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
-            >
-              <Fade delay={200}>
-                <li>Diverse academic programs across disciplines.</li>
-              </Fade>
-              <Fade delay={240}>
-                <li>Accredited by NAAC with an 'A' Grade.</li>
-              </Fade>
-              <Fade delay={280}>
-                <li>
-                  Strong industry connections for internships and placements.
-                </li>
-              </Fade>
-              <Fade delay={320}>
-                <li>State-of-the-art infrastructure with modern facilities.</li>
-              </Fade>
-              <Fade delay={360}>
-                <li>Experienced faculty providing quality education.</li>
-              </Fade>
-              <Fade delay={400}>
-                <li>Research opportunities for students.</li>
-              </Fade>
-              <Fade delay={440}>
-                <li>Vibrant campus life with clubs and cultural events.</li>
-              </Fade>
-              <Fade delay={480}>
-                <li>
-                  Strategic location in Bangalore for career opportunities.
-                </li>
-              </Fade>
-              <Fade delay={520}>
-                <li>Scholarships and financial aid available.</li>
-              </Fade>
-              <Fade delay={560}>
-                <li>Emphasis on holistic development beyond academics.</li>
-              </Fade>
-            </ul>
-          </div>
-        </div>
         <HeadText value={"Courses Offered"} />
         <div className="row">
           <div className="col-md-12">
@@ -137,7 +94,127 @@ const Main = () => {
             </Fade>
           </div>
         </div>
-        <HeadText value={"Course-Wise Eligibility"} />
+        <HeadText value={"Placement"} />
+        <div className="row ">
+          <div class="col-md-12 ">
+            <p
+              style={{ textAlign: "justify", padding: "0% 5%" }}
+              className="col-md-11 m-auto pb-4 "
+            >
+              The Placement and Training Cell at REVA University is committed to
+              facilitating the professional growth and career aspirations of its
+              students. Through various initiatives and collaborations, the
+              university ensures that graduating students are equipped with the
+              skills and opportunities necessary to embark on successful career
+              paths. Placement Statistics 2023:
+            </p>
+            <div class="Students-component ">
+              <ul className="boxes-of-palcement d-flex justify-content-center gap-5">
+                <li class="c1" style={{ backgroundColor: "#da2032" }}>
+                  {" "}
+                  <span style={{ fontSize: "2.5rem", fontWeight: 700 }}>
+                    3512{" "}
+                  </span>{" "}
+                  Total No. of Offers
+                </li>
+                <li class="c2" style={{ backgroundColor: "#a61a32" }}>
+                  {" "}
+                  <span style={{ fontSize: "2.5rem", fontWeight: 700 }}>
+                    <i class="fa fa-inr" aria-hidden="true"></i> 45{" "}
+                    <small style={{ fontSize: "1.1rem !important" }}>LPA</small>
+                  </span>{" "}
+                  Highest Domestic Package{" "}
+                </li>
+                <li class="c3" style={{ backgroundColor: "#034ea2" }}>
+                  {" "}
+                  <span style={{ fontSize: "2.5rem", fontWeight: 700 }}>
+                    <i class="fa fa-inr" aria-hidden="true"></i> 58
+                    <small style={{ fontSize: "1.1rem !important" }}>LPA</small>
+                  </span>{" "}
+                  Highest International Package{" "}
+                </li>
+                <li class="c4" style={{ backgroundColor: "#00abe6" }}>
+                  {" "}
+                  <span style={{ fontSize: "2.5rem", fontWeight: 700 }}>
+                    <i class="fa fa-inr" aria-hidden="true"></i> 4.5- 5.5{" "}
+                    <small style={{ fontSize: "1.1rem !important" }}>LPA</small>
+                  </span>{" "}
+                  Average Package{" "}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <HeadText value={"top Recruiters"} />
+        <div
+          className="row main-Top-Recruiters"
+          style={{ overflowX: "hidden" }}
+        >
+          <div className="col-md-12 Top-Recruiters">
+            <img src={require("../Assets/slide-image/02.png")} alt="" />
+            <img src={require("../Assets/slide-image/05.png")} alt="" />
+            <img src={require("../Assets/slide-image/06.png")} alt="" />
+            <img src={require("../Assets/slide-image/07.png")} alt="" />
+            <img src={require("../Assets/slide-image/10.png")} alt="" />
+            <img src={require("../Assets/slide-image/13.png")} alt="" />
+            <img src={require("../Assets/slide-image/14.png")} alt="" />
+            <img src={require("../Assets/slide-image/15.png")} alt="" />
+          </div>
+        </div>
+        <div className="row main-contact-us mt-5 mb-5">
+          {show ? <Modal cancel={setShow} /> : null}
+          <div className="col-md-12 contact-us p-5">
+            <h1 style={{ color: "white" }}>To Know Eligibility Criteria</h1>
+
+            <button
+              className="contact-button"
+              style={{ width: "14rem" }}
+              onClick={() => setShow(true)}
+            >
+              {" "}
+              Click Herer!
+            </button>
+          </div>
+        </div>
+
+        <HeadText value="Why Choose Reva University?" />
+        <div className="row  m-auto">
+          <div className="col-md-3 d-none d-md-block">
+            <img
+              src={require("../Assets/f14d6c0a5773675a110f0fbb4988efa6-removebg-preview.png")}
+              alt=""
+              className="why-chose-us-image"
+            />
+          </div>
+          <div className="col-md-8 m-auto">
+            <ul className="why-chose-reva">
+              <Fade delay={200}>
+                <li>Diverse academic programs across disciplines.</li>
+              </Fade>
+              <Fade delay={280}>
+                <li>
+                  Strong industry connections for internships and placements.
+                </li>
+              </Fade>
+
+              <Fade delay={360}>
+                <li>Experienced faculty providing quality education.</li>
+              </Fade>
+              <Fade delay={400}>
+                <li>Research opportunities for students.</li>
+              </Fade>
+              <Fade delay={440}>
+                <li>Vibrant campus life with clubs and cultural events.</li>
+              </Fade>
+
+              <Fade delay={560}>
+                <li>Emphasis on holistic development beyond academics.</li>
+              </Fade>
+            </ul>
+          </div>
+        </div>
+
+        {/* <HeadText value={"Course-Wise Eligibility"} />
         <div className="row">
           <div className="col-md-12 m-auto eligibility-of-page ">
             <div>
@@ -199,23 +276,8 @@ const Main = () => {
               </p>
             </div>
           </div>
-        </div>
-        <HeadText value={"top Recruiters"} />
-        <div
-          className="row main-Top-Recruiters"
-          style={{ overflowX: "hidden" }}
-        >
-          <div className="col-md-12 Top-Recruiters">
-            <img src={require("../Assets/slide-image/02.png")} alt="" />
-            <img src={require("../Assets/slide-image/05.png")} alt="" />
-            <img src={require("../Assets/slide-image/06.png")} alt="" />
-            <img src={require("../Assets/slide-image/07.png")} alt="" />
-            <img src={require("../Assets/slide-image/10.png")} alt="" />
-            <img src={require("../Assets/slide-image/13.png")} alt="" />
-            <img src={require("../Assets/slide-image/14.png")} alt="" />
-            <img src={require("../Assets/slide-image/15.png")} alt="" />
-          </div>
-        </div>
+        </div> */}
+
         <HeadText value={"Campus Life"} />
         <Fade delay={500} direction="left">
           <div className="row main-campus-life">
@@ -282,6 +344,75 @@ const Main = () => {
             </div>
           </div>
         </Fade>
+        <HeadText value="Approvals and Accreditations" />
+        <Fade delay={250}>
+          <div className="row main-approval-and-acredation">
+            <div className="col-md-12 approval-and-acredation">
+              <img src={require("../Assets/NACC B+.jpg")} alt="" />
+              <img src={require("../Assets/NBA.jpg")} alt="" />
+              <img src={require("../Assets/NIRF.jpg")} alt="" />
+              <img src={require("../Assets/AICTE.png")} alt="" />
+              <img src={require("../Assets/ugc-removebg-preview.png")} alt="" />
+            </div>
+          </div>
+        </Fade>
+
+        <HeadText value={"Ranks and Awards"} />
+        <div
+          className="row d-flex justify-content-center align-items-center gap-5"
+          style={{ flexWrap: "wrap" }}
+        >
+          <div className="col-md-5 ranks">
+            <h2 className="pb-4"> QS Asian University Rankings</h2>
+            <p>
+              Ranked 6th among all private universities in Karnataka in 2023
+            </p>
+            <p>
+              Secured the 47th position among all private universities in India
+            </p>
+          </div>
+          <div className="col-md-5 ranks">
+            <h2 className="pb-4"> IIRF Rankings</h2>
+            <p>
+              Ranked 17th in the country and 5th in Karnataka for Architecture.
+            </p>
+            <p>
+              Ranked 18th in the country and 4th in Karnataka for Law in 2023
+            </p>
+          </div>
+          <div className="col-md-5 ranks">
+            <h2 className="pb-4"> FORTUNE India's Best B-Schools Rankings</h2>
+            <p>Ranked 7th in Bangalore City.</p>
+            <p>Ranked 92nd pan India.</p>
+          </div>
+          <div className="col-md-5 ranks">
+            <h2 className="pb-4"> QS I-Gauge Ratings</h2>
+            <p>"Diamond" University Rating for Overall Excellence</p>
+            <p style={{ letterSpacing: "1px" }}>
+              "Diamond" University Ratings for Employability, Diversity &
+              Accessibility, Facilities, and Social Responsibility.
+            </p>
+          </div>
+        </div>
+
+        <div className="row main-contact-us mt-5 mb-5">
+          {show ? <Modal cancel={setShow} /> : null}
+          <div className="col-md-12 contact-us p-5">
+            <h1 style={{ color: "white" }}>
+              To learn more about the Admission and selection process, contact
+              us now!
+            </h1>
+
+            <button
+              className="contact-button"
+              style={{ width: "14rem" }}
+              onClick={() => setShow(true)}
+            >
+              {" "}
+              Click Herer!
+            </button>
+          </div>
+        </div>
         <HeadText value={"FAQs"} />
         <div className="row">
           <div className="col-md-12">
@@ -334,43 +465,6 @@ const Main = () => {
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
-          </div>
-        </div>
-        <HeadText value={"Ranks and Awards"} />
-        <div
-          className="row d-flex justify-content-center align-items-center gap-5"
-          style={{ flexWrap: "wrap" }}
-        >
-          <div className="col-md-5 ranks">
-            <h2 className="pb-4"> QS Asian University Rankings</h2>
-            <p>
-              Ranked 6th among all private universities in Karnataka in 2023
-            </p>
-            <p>
-              Secured the 47th position among all private universities in India
-            </p>
-          </div>
-          <div className="col-md-5 ranks">
-            <h2 className="pb-4"> IIRF Rankings</h2>
-            <p>
-              Ranked 17th in the country and 5th in Karnataka for Architecture.
-            </p>
-            <p>
-              Ranked 18th in the country and 4th in Karnataka for Law in 2023
-            </p>
-          </div>
-          <div className="col-md-5 ranks">
-            <h2 className="pb-4"> FORTUNE India's Best B-Schools Rankings</h2>
-            <p>Ranked 7th in Bangalore City.</p>
-            <p>Ranked 92nd pan India.</p>
-          </div>
-          <div className="col-md-5 ranks">
-            <h2 className="pb-4"> QS I-Gauge Ratings</h2>
-            <p>"Diamond" University Rating for Overall Excellence</p>
-            <p style={{ letterSpacing: "1px" }}>
-              "Diamond" University Ratings for Employability, Diversity &
-              Accessibility, Facilities, and Social Responsibility.
-            </p>
           </div>
         </div>
       </div>
