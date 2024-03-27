@@ -178,7 +178,7 @@ const Main = () => {
         </div>
 
         <HeadText value="Why Choose Reva University?" />
-        <div className="row  m-auto">
+        <div className="row d-flex justify-content-center align-items-center gap-1">
           <div className="col-md-3 d-none d-md-block">
             <img
               src={require("../Assets/f14d6c0a5773675a110f0fbb4988efa6-removebg-preview.png")}
@@ -415,7 +415,7 @@ const Main = () => {
         </div>
         <HeadText value={"FAQs"} />
         <div className="row">
-          <div className="col-md-12">
+          <div className="col-md-11 m-auto">
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
                 <Accordion.Header>

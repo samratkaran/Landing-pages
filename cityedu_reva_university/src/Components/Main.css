@@ -49,7 +49,7 @@ li {
   align-items: center;
   gap: 2rem;
   text-align: justify;
-  padding: 0% 2%;
+  padding: 2% 2%;
   background-color: #f8eeeb;
   /* border: 1px solid black; */
 }
@@ -84,6 +84,7 @@ li {
   gap: 2rem;
   justify-content: center;
   align-items: center;
+  padding-right: 2rem;
 }
 .why-chose-reva li {
   /* border: 1px solid red; */
@@ -152,7 +153,6 @@ li {
   background-color: transparent;
   transition: 1s;
   border-radius: 0.3em;
-
   font-weight: bold;
   cursor: pointer;
 }
@@ -163,7 +163,6 @@ li {
   left: 3%;
   width: 95%;
   height: 40%;
-
   transition: 0.5s;
   transform-origin: center;
 }
