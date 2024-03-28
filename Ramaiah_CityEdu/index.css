@@ -38,20 +38,27 @@
   display: inline-block;
 }
 .text-of-landing-page {
-  font-size: 800%;
+  font-size: 570%;
   text-transform: uppercase;
   text-shadow: 4px 4px 8px #000000;
   display: inline-block;
   animation: slideIn 1s ease forwards;
 }
 .extra-text {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
   border: 1px solid black;
   background-color: #df3d0f;
-  margin-top: 1rem;
-  width: 86%;
+  /* margin-top: 1rem; */
+  width: 60%;
+  margin: auto;
+}
+.extra-text-two {
+  width: 60%;
+  margin: auto;
+  color: white;
+  font-size: 235%;
+  margin-top: 10px;
+  font-weight: 600;
+  text-shadow: 4px 4px 8px #000000;
 }
 
 .head-text-of-all {
@@ -61,12 +68,16 @@
   text-align: center;
   color: #df3d0f;
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 3.6rem;
   position: relative;
 }
 .head-text-of-all h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .head-text-of-all::after {
   content: "";
@@ -76,6 +87,7 @@
   border-color: #3a1d64;
   left: 50%;
   transform: translateX(-50%);
+  background-color: #3a1d64;
   width: 20%; /* Adjust as needed */
   height: 5px;
   /* background-color: #151515; */
@@ -159,23 +171,24 @@
 }
 
 .graduation > div {
-  background-color: #df3d0f;
+  background-color: #ffffff;
+  color: black;
   border-radius: 10px;
   margin-bottom: 3%;
-  text-align: center;
   transition: background-color 0.3s ease;
 }
 .graduation {
   margin: auto;
   display: flex;
   justify-content: center;
+  text-align: center;
   /* align-items: center; */
   padding: 0 3%;
   gap: 5%;
 }
 
 .graduation > div:hover {
-  background-color: #3a1d64;
+  background-color: yellow;
 }
 
 .reason-to-study {
@@ -431,13 +444,31 @@ button {
   }
 
   .text-of-landing-page {
-    font-size: 300%;
+    font-size: 240%;
     margin-top: 1rem;
     text-shadow: 4px 4px 8px #000000;
   }
   .span-text-of-landing-page {
     font-size: 158%;
     text-shadow: 4px 4px 8px #000000;
+  }
+  .extra-text-two {
+    width: 100%;
+    margin: auto;
+    color: white;
+    font-size: 135%;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    text-shadow: 4px 4px 8px #000000;
+  }
+  .know-more-text {
+    font-size: 1.5rem;
+    text-align: justify;
+    flex-wrap: wrap;
+    display: flex;
+    color: white;
+    font-weight: 600;
   }
 
   .pop-up-form {
@@ -462,6 +493,16 @@ button {
   }
   .Recruiters {
     margin-bottom: 0rem;
+  }
+  .center-main {
+    position: fixed !important;
+    top: 55% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    color: black !important;
+    width: 90% !important;
+    text-align: center !important;
+    height: 80% !important;
   }
 }
 
