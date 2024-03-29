@@ -237,42 +237,43 @@ const Main = () => {
               style={{ textAlign: "justify", padding: "0% 5%" }}
               className="col-md-11 m-auto pb-4 "
             >
-              The Placement and Training Cell at REVA University is committed to
-              facilitating the professional growth and career aspirations of its
-              students. Through various initiatives and collaborations, the
-              university ensures that graduating students are equipped with the
-              skills and opportunities necessary to embark on successful career
-              paths. Placement Statistics 2023:
+              Over 150,000 Amity alumni have successfully transitioned into top
+              organizations worldwide, with over 500 leading corporates,
+              including Fortune 500 employers, visiting the campus for
+              recruitment. Noteworthy achievements include 36,000 campus
+              placements in recent years, with 11,000 placements in 2021-22
+              alone. Despite challenges, Amity secured 1500 campus placements
+              even during the lockdown, with alumni drawing salaries of up to
+              Rs. 2 crore p.a.
             </p>
             <div class="Students-component ">
               <ul className="boxes-of-palcement d-flex justify-content-center gap-5">
                 <li class="c1" style={{ backgroundColor: "#da2032" }}>
                   {" "}
                   <span style={{ fontSize: "2.5rem", fontWeight: 700 }}>
-                    3512{" "}
+                    11,000+{" "}
                   </span>{" "}
                   Total No. of Offers
                 </li>
                 <li class="c2" style={{ backgroundColor: "#a61a32" }}>
                   {" "}
                   <span style={{ fontSize: "2.5rem", fontWeight: 700 }}>
-                    <i class="fa fa-inr" aria-hidden="true"></i> 45{" "}
+                    <i class="fa fa-inr" aria-hidden="true"></i> 61.75{" "}
                     <small style={{ fontSize: "1.1rem !important" }}>LPA</small>
                   </span>{" "}
-                  Highest Domestic Package{" "}
+                  Highest Package{" "}
                 </li>
                 <li class="c3" style={{ backgroundColor: "#034ea2" }}>
                   {" "}
                   <span style={{ fontSize: "2.5rem", fontWeight: 700 }}>
-                    <i class="fa fa-inr" aria-hidden="true"></i> 58
-                    <small style={{ fontSize: "1.1rem !important" }}>LPA</small>
+                    <i class="fa fa-inr" aria-hidden="true"></i> 1,050
                   </span>{" "}
-                  Highest International Package{" "}
+                  Total Recruiters
                 </li>
                 <li class="c4" style={{ backgroundColor: "#00abe6" }}>
                   {" "}
                   <span style={{ fontSize: "2.5rem", fontWeight: 700 }}>
-                    <i class="fa fa-inr" aria-hidden="true"></i> 4.5- 5.5{" "}
+                    <i class="fa fa-inr" aria-hidden="true"></i> 5{" "}
                     <small style={{ fontSize: "1.1rem !important" }}>LPA</small>
                   </span>{" "}
                   Average Package{" "}
@@ -287,20 +288,26 @@ const Main = () => {
           style={{ overflowX: "hidden" }}
         >
           <div className="col-md-12 Top-Recruiters">
-            <img src={require("../Assets/slide-image/02.png")} alt="" />
-            <img src={require("../Assets/slide-image/05.png")} alt="" />
-            <img src={require("../Assets/slide-image/06.png")} alt="" />
-            <img src={require("../Assets/slide-image/07.png")} alt="" />
-            <img src={require("../Assets/slide-image/10.png")} alt="" />
-            <img src={require("../Assets/slide-image/13.png")} alt="" />
-            <img src={require("../Assets/slide-image/14.png")} alt="" />
-            <img src={require("../Assets/slide-image/15.png")} alt="" />
+          <img src={require("../Assets/slide-image/01.png")} alt="" />
+          <img src={require("../Assets/slide-image/02.png")} alt="" />
+          <img src={require("../Assets/slide-image/03.png")} alt="" />
+          <img src={require("../Assets/slide-image/04.png")} alt="" />
+          <img src={require("../Assets/slide-image/05.png")} alt="" />
+          <img src={require("../Assets/slide-image/06.png")} alt="" />
+          <img src={require("../Assets/slide-image/Airtel_logo.png")} alt="" />
+          <img src={require("../Assets/slide-image/congnizent.jpg")} alt="" />
+          <img src={require("../Assets/slide-image/mtx.png")} alt="" />
+          <img src={require("../Assets/slide-image/01.png")} alt="" />
+          <img src={require("../Assets/slide-image/02.png")} alt="" />
+          <img src={require("../Assets/slide-image/03.png")} alt="" />
           </div>
         </div>
         <div className="row main-contact-us mt-5 mb-5">
           {show ? <Modal cancel={setShow} /> : null}
           <div className="col-md-12 contact-us p-5">
-            <h1 style={{ color: "white" }}>To Know Eligibility Criteria</h1>
+            <h1 style={{ color: "white" }}>
+              To Know About Eligibility Criteria and Admission Process
+            </h1>
 
             <button
               className="contact-button"
@@ -412,9 +419,7 @@ const Main = () => {
         <Fade delay={250}>
           <div className="row main-approval-and-acredation">
             <div className="col-md-12 approval-and-acredation">
-              <img src={require("../Assets/NACC B+.jpg")} alt="" />
-              <img src={require("../Assets/NBA.jpg")} alt="" />
-              <img src={require("../Assets/NIRF.jpg")} alt="" />
+              <img src={require("../Assets/NACC-A.webp")} alt="" />
               <img src={require("../Assets/AICTE.png")} alt="" />
               <img src={require("../Assets/ugc-removebg-preview.png")} alt="" />
             </div>

@@ -224,13 +224,13 @@ body {
   justify-content: center;
   align-items: center;
   gap: 3%;
-  animation: slide 8s linear infinite;
+  animation: slide 6s linear infinite;
   object-fit: cover;
   margin-top: -2rem !important;
 }
 
 .Top-Recruiters img {
-  width: 30%;
+  width: 15%;
   height: 50%;
 }
 .main-campus-life {
@@ -410,5 +410,9 @@ p {
     font-size: 1rem;
     text-transform: uppercase;
     position: relative;
+  }
+  .Top-Recruiters img {
+    width: 30%;
+    height: 50%;
   }
 }
