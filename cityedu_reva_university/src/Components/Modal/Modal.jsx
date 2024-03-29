@@ -9,7 +9,7 @@ const ModalForm = ({ cancel }) => {
     phone: "",
     course: "",
     location: "",
-    college: "LLB 2024",
+    college: "Reva University Bangalore", 
   });
 
   const [showform, setShowForm] = useState(true);
