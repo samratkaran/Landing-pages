@@ -1,0 +1,30 @@
+.heder-of-city-guidde {
+  position: fixed;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #183e65;
+  z-index: 100;
+  box-sizing: content-box !important;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 2px solid black;
+  box-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+img {
+  width: 65px;
+  margin: 1% 2%;
+}
+span {
+  font-size: 200%;
+  font-weight: 600;
+  padding-right: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  span {
+    font-size: 115%;
+    padding-right: 40px;
+  }
+}
