@@ -14,6 +14,8 @@ const ModalForm = ({ cancel }) => {
 
   const [showform, setShowForm] = useState(true);
 
+  const [showThankYouMessage, setShowThankYouMessage] = useState(false);
+
   const handleInputChanges = (e) => {
     const { name, value } = e.target;
     setcollegeData((prevInput) => ({
@@ -23,13 +25,24 @@ const ModalForm = ({ cancel }) => {
   };
 
   const HandleFormSubmit = (e) => {
+    
     handleSubmit(e, collegeData)
       .then((res) => {
         setShowForm(false);
+        setShowThankYouMessage(true);
+        setTimeout(() => {
+          setShowThankYouMessage(false);
+        }, 4000);
       })
+
       .catch((err) => {
         console.log(err);
       });
+  // setShowForm(false);
+  //   setShowThankYouMessage(true);
+  //   setTimeout(() => {
+  //     setShowThankYouMessage(false);
+  //   }, 4000);
   };
 
   return (
@@ -50,6 +63,7 @@ const ModalForm = ({ cancel }) => {
                 textAlign: "right",
                 width: "90%",
                 cursor: "pointer",
+                color:"white"
               }}
               onClick={() => cancel(false)}
             >
@@ -124,16 +138,42 @@ const ModalForm = ({ cancel }) => {
             </b>
           </form>
         </div>
-      ) : (
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, itaque
-          quasi! Exercitationem quis ullam iste minus maxime ea alias, quisquam,
-          ratione mollitia natus error suscipit facilis distinctio, assumenda
-          laborum aspernatur.
-        </p>
-      )}
+      ) : showThankYouMessage ? (
+        <div className="col-md-6 mb-2 mt-3 main-thank-you-of-landing-page">
+          <h3>
+            Thank you For Inquiring
+            <br />
+            <br />
+            Our Counsellors will contact you within 24hrs to 48hrs
+          </h3>
+        </div>
+      ) : null}
     </div>
   );
 };
 
 export default ModalForm;
+
+
+// copy this whole code and paste it in HandelFormSubmit to check the form is workig or not without calling API
+
+// const HandleFormSubmit = (e) => {
+//   e.preventDefault();
+// //   handleSubmit(e, collegeData)
+// //     .then((res) => {
+// //       setShowForm(false);
+// //       setShowThankYouMessage(true);
+// //       setTimeout(() => {
+// //         setShowThankYouMessage(false);
+// //       }, 4000);
+// //     })
+
+// //     .catch((err) => {
+// //       console.log(err);
+// //     });
+// setShowForm(false);
+//   setShowThankYouMessage(true);
+//   setTimeout(() => {
+//     setShowThankYouMessage(false);
+//   }, 4000);
+// };

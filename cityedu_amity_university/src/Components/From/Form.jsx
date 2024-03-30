@@ -45,7 +45,7 @@ const Form = () => {
             id="myFirstForm"
             onSubmit={HandleFormSubmit}
           >
-            <h2 style={{ color: "black", textShadow: "1px 1px 1px black" }}>
+            <h2 style={{ color: "white", textShadow: "1px 1px 1px black" }}>
               Enquire Now
             </h2>
 
@@ -114,12 +114,12 @@ const Form = () => {
           </form>
         </div>
       ) : (
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, itaque
-          quasi! Exercitationem quis ullam iste minus maxime ea alias, quisquam,
-          ratione mollitia natus error suscipit facilis distinctio, assumenda
-          laborum aspernatur.
-        </p>
+        <div class="col-md-6 mb-2 mt-3 main-thank-you-of-landing-page">
+      <h3>Thank you For Inquiring 
+        <br/>
+        <br/>
+        Our Counsellors will contact you within 24hrs to 48hrs</h3>
+    </div>
       )}
     </div>
   );
