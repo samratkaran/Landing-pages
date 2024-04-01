@@ -38,14 +38,19 @@ const Form = () => {
         <div
           class=" mb-5  main-form-of-landing-page  "
           id="changeMe"
-          style={{ display: "flex", flexDirection: "column" }}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
         >
           <form
             class="form-of-landing-page"
             id="myFirstForm"
             onSubmit={HandleFormSubmit}
           >
-            <h2 style={{ color: "white", textShadow: "1px 1px 1px black" }}>
+            <h2 style={{ color: "black", textShadow: "1px 1px 1px black" }}>
               Enquire Now
             </h2>
 
@@ -115,11 +120,13 @@ const Form = () => {
         </div>
       ) : (
         <div class="col-md-6 mb-2 mt-3 main-thank-you-of-landing-page">
-      <h3>Thank you For Inquiring 
-        <br/>
-        <br/>
-        Our Counsellors will contact you within 24hrs to 48hrs</h3>
-    </div>
+          <h3>
+            Thank you For Inquiring
+            <br />
+            <br />
+            Our Counsellors will contact you within 24hrs to 48hrs
+          </h3>
+        </div>
       )}
     </div>
   );

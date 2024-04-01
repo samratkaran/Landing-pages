@@ -1,7 +1,7 @@
 import "./Main.css";
 import Form from "./From/Form";
 import HeadText from "./HeadText/HeadText";
-import { Fade } from "react-awesome-reveal";
+import { Bounce, Fade } from "react-awesome-reveal";
 import Accordion from "react-bootstrap/Accordion";
 import { useState } from "react";
 import Modal from "./Modal/Modal";
@@ -14,36 +14,25 @@ const Main = () => {
   const handleSectionClick = (section) => {
     setActiveSection(section);
   };
-
-  // const [showModal, setShowModal] = useState(false);
-
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     setShowModal(true);
-  //   }, 5000); // 20 seconds in milliseconds
-
-  //   // Clear the interval when the component unmounts
-  //   return () => clearInterval(timer);
-  // }, []);
-
   return (
     <>
-      {/* {showModal && <Modal cancel={setShow} />} */}
-      <div className="row main-head-text-of-landing-page">
-        <div className="col-md-8 text-white">
-          <p className="head-text-of-page">AMITY </p>
-          <p className="second-head-text-of-page"> UNIVERSITY, NOIDA</p>
-          <p className="span-text-of-page">
-            If you are looking to shape your future and live your dreams-Join
-            Amity University Noida.
-          </p>
-          <p className="span-text-of-page ">Admission Open 2024-25</p>
-        </div>
+      <Fade cascade damping={0.5}>
+        <div className="row main-head-text-of-landing-page">
+          <div className="col-md-8 text-white">
+            <p className="head-text-of-page">AMITY </p>
+            <p className="second-head-text-of-page"> UNIVERSITY, NOIDA</p>
+            <p className="span-text-of-page">
+              If you are looking to shape your future and live your dreams-Join
+              Amity University Noida.
+            </p>
+            <p className="span-text-of-page ">Admission Open 2024-25</p>
+          </div>
 
-        <div className="col-md-3">
-          <Form />
+          <div className="col-md-3">
+            <Form />
+          </div>
         </div>
-      </div>
+      </Fade>
       <div className="main-container mb-5">
         <div className="row main-overview-of-page">
           <h1
@@ -125,12 +114,7 @@ const Main = () => {
                     Duration={"3 Years"}
                     imageUrl={require("../Assets/couese-image/Bachelor of Science(Hons.).jpg")}
                   />
-                  <CourseCard
-                    CourseName={"BCA"}
-                    DegreeName={"Bachelor"}
-                    Duration={"3 Years"}
-                    imageUrl={require("../Assets/couese-image/Bachelor of Computer Applications.jpg")}
-                  />
+
                   <CourseCard
                     CourseName={"B.Ed"}
                     DegreeName={"Bachelor"}
@@ -146,7 +130,7 @@ const Main = () => {
                   <CourseCard
                     CourseName={"B.Arch"}
                     DegreeName={"Bachelor"}
-                    Duration={"3 Years"}
+                    Duration={"4 Years"}
                     imageUrl={require("../Assets/couese-image/B.Arch.jpg")}
                   />
                   <CourseCard
@@ -192,37 +176,37 @@ const Main = () => {
                   <CourseCard
                     CourseName={"MBA/PGDM"}
                     DegreeName={"Master"}
-                    Duration={"3 Years"}
+                    Duration={"2 Years"}
                     imageUrl={require("../Assets/couese-image/MBA.jpg")}
                   />
                   <CourseCard
                     CourseName={"M.A."}
                     DegreeName={"Master"}
-                    Duration={"3 Years"}
+                    Duration={"2 Years"}
                     imageUrl={require("../Assets/couese-image/M.A..png")}
                   />
                   <CourseCard
                     CourseName={"M.Sc."}
                     DegreeName={"Master"}
-                    Duration={"3 Years"}
+                    Duration={"2 Years"}
                     imageUrl={require("../Assets/couese-image/M.Sc..jpg")}
                   />
                   <CourseCard
                     CourseName={"MCA"}
                     DegreeName={"Master"}
-                    Duration={"3 Years"}
+                    Duration={"2 Years"}
                     imageUrl={require("../Assets/couese-image/MCA.jpg")}
                   />
                   <CourseCard
                     CourseName={"M.E./M.Tech"}
                     DegreeName={"Master"}
-                    Duration={"3 Years"}
+                    Duration={"2 Years"}
                     imageUrl={require("../Assets/couese-image/M.Tech.jpg")}
                   />
                   <CourseCard
                     CourseName={"M.Pharma"}
                     DegreeName={"Master"}
-                    Duration={"3 Years"}
+                    Duration={"2 Years"}
                     imageUrl={require("../Assets/couese-image/M.Pharma.jpg")}
                   />
                 </div>
@@ -288,39 +272,44 @@ const Main = () => {
           style={{ overflowX: "hidden" }}
         >
           <div className="col-md-12 Top-Recruiters">
-          <img src={require("../Assets/slide-image/01.png")} alt="" />
-          <img src={require("../Assets/slide-image/02.png")} alt="" />
-          <img src={require("../Assets/slide-image/03.png")} alt="" />
-          <img src={require("../Assets/slide-image/04.png")} alt="" />
-          <img src={require("../Assets/slide-image/05.png")} alt="" />
-          <img src={require("../Assets/slide-image/06.png")} alt="" />
-          <img src={require("../Assets/slide-image/Airtel_logo.png")} alt="" />
-          <img src={require("../Assets/slide-image/congnizent.jpg")} alt="" />
-          <img src={require("../Assets/slide-image/mtx.png")} alt="" />
-          <img src={require("../Assets/slide-image/01.png")} alt="" />
-          <img src={require("../Assets/slide-image/02.png")} alt="" />
-          <img src={require("../Assets/slide-image/03.png")} alt="" />
+            <img src={require("../Assets/slide-image/01.png")} alt="" />
+            <img src={require("../Assets/slide-image/02.png")} alt="" />
+            <img src={require("../Assets/slide-image/03.png")} alt="" />
+            <img src={require("../Assets/slide-image/04.png")} alt="" />
+            <img src={require("../Assets/slide-image/05.png")} alt="" />
+            <img src={require("../Assets/slide-image/06.png")} alt="" />
+            <img
+              src={require("../Assets/slide-image/Airtel_logo.png")}
+              alt=""
+            />
+            <img src={require("../Assets/slide-image/congnizent.jpg")} alt="" />
+            <img src={require("../Assets/slide-image/mtx.png")} alt="" />
+            <img src={require("../Assets/slide-image/01.png")} alt="" />
+            <img src={require("../Assets/slide-image/02.png")} alt="" />
+            <img src={require("../Assets/slide-image/03.png")} alt="" />
           </div>
         </div>
-        <div className="row main-contact-us mt-5 mb-5">
-          {show ? <Modal cancel={setShow} /> : null}
-          <div className="col-md-12 contact-us p-5">
-            <h1 style={{ color: "white" }}>
-              To Know About Eligibility Criteria and Admission Process
-            </h1>
+        <Bounce duration={1000}>
+          <div className="row main-contact-us mt-5 mb-5">
+            {show ? <Modal cancel={setShow} /> : null}
+            <div className="col-md-12 contact-us p-5">
+              <h1 style={{ color: "white" }}>
+                To Know About Eligibility Criteria and Admission Process
+              </h1>
 
-            <button
-              className="contact-button"
-              style={{ width: "14rem" }}
-              onClick={() => setShow(true)}
-            >
-              {" "}
-              Click Herer!
-            </button>
+              <button
+                className="contact-button"
+                style={{ width: "14rem" }}
+                onClick={() => setShow(true)}
+              >
+                {" "}
+                Click Herer!
+              </button>
+            </div>
           </div>
-        </div>
+        </Bounce>
 
-        <HeadText value="Why Choose Reva University?" />
+        <HeadText value="Why Choose Amity University?" />
         <div className="row d-flex justify-content-center align-items-center ">
           <div className="col-md-4 d-none d-md-block m-auto">
             <img
@@ -426,62 +415,6 @@ const Main = () => {
           </div>
         </Fade>
 
-        <HeadText value={"Ranks and Awards"} />
-        {/* <div
-          className="row d-flex justify-content-center align-items-center gap-5"
-          style={{ flexWrap: "wrap" }}
-        >
-          <div className="col-md-5 ranks">
-            <h2 className="pb-4"> QS Asian University Rankings</h2>
-            <p>
-              Ranked 6th among all private universities in Karnataka in 2023
-            </p>
-            <p>
-              Secured the 47th position among all private universities in India
-            </p>
-          </div>
-          <div className="col-md-5 ranks">
-            <h2 className="pb-4"> IIRF Rankings</h2>
-            <p>
-              Ranked 17th in the country and 5th in Karnataka for Architecture.
-            </p>
-            <p>
-              Ranked 18th in the country and 4th in Karnataka for Law in 2023
-            </p>
-          </div>
-          <div className="col-md-5 ranks">
-            <h2 className="pb-4"> FORTUNE India's Best B-Schools Rankings</h2>
-            <p>Ranked 7th in Bangalore City.</p>
-            <p>Ranked 92nd pan India.</p>
-          </div>
-          <div className="col-md-5 ranks">
-            <h2 className="pb-4"> QS I-Gauge Ratings</h2>
-            <p>"Diamond" University Rating for Overall Excellence</p>
-            <p style={{ letterSpacing: "1px" }}>
-              "Diamond" University Ratings for Employability, Diversity &
-              Accessibility, Facilities, and Social Responsibility.
-            </p>
-          </div>
-        </div> */}
-
-        {/* <div className="row main-contact-us mt-5 mb-5">
-          {show ? <Modal cancel={setShow} /> : null}
-          <div className="col-md-12 contact-us p-5">
-            <h1 style={{ color: "white" }}>
-              To learn more about the Admission and selection process, contact
-              us now!
-            </h1>
-
-            <button
-              className="contact-button"
-              style={{ width: "14rem" }}
-              onClick={() => setShow(true)}
-            >
-              {" "}
-              Click Herer!
-            </button>
-          </div>
-        </div> */}
         <HeadText value={"FAQs"} />
         <div className="row">
           <div className="col-md-11 m-auto">

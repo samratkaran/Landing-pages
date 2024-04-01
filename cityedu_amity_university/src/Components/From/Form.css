@@ -31,7 +31,7 @@ button {
 @media only screen and (max-width: 768px) {
   .form-of-landing-page {
     width: 90%;
-    background-color: #236eb0;
+    background-color: #ffffff;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
