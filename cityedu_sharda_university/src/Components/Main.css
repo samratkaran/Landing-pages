@@ -1,0 +1,430 @@
+.main-container {
+  /* padding: 0% 2%; */
+  margin-top: 2rem;
+  width: 100%;
+}
+h1 {
+  text-transform: uppercase;
+}
+p,
+li {
+  font-size: 1.2rem;
+}
+body {
+  overflow-x: hidden;
+}
+
+.main-head-text-of-landing-page {
+  padding-top: 2rem !important;
+  padding: 0% 2%;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #00000029, #00000021),
+    url(../Assets/main-back.jpg);
+  /* background-image: url(./Assets/Ayurvedic-Medicine-Manufacturer-in-Kanpur.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+}
+.head-text-of-page {
+  font-size: 1250%;
+  color: #ffc107;
+  margin-bottom: -3rem;
+  font-weight: 600;
+  text-shadow: black 4px 4px 8px;
+}
+.second-head-text-of-page {
+  font-size: 528%;
+  font-weight: 600;
+  text-shadow: black 4px 4px 8px;
+}
+
+.span-text-of-page {
+  font-size: 2.5rem;
+  font-family: serif;
+  text-shadow: black 4px 4px 8px;
+  margin-bottom: 3rem;
+}
+.span-text-of-page-two {
+  font-size: 2.5rem;
+  font-family: serif;
+  text-shadow: black 4px 4px 8px;
+  background-color: red;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+.main-overview-of-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 2rem;
+
+  gap: 2rem;
+  text-align: justify;
+  padding: 2% 2%;
+  background-color: #2d4191;
+  color: white;
+  /* border: 1px solid black; */
+}
+.overview-image {
+  width: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #fcb000;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  padding-bottom: 4rem;
+  font-family: sans-serif;
+}
+
+.tab {
+  cursor: pointer;
+  font-size: 3rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.active-section {
+  display: block;
+}
+.bachelor-and-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  height: auto;
+}
+/* ----------------------------- */
+
+.boxes-of-palcement {
+  padding: 2% 5%;
+}
+.boxes-of-palcement li {
+  height: 10rem;
+}
+.approval-and-acredation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0% 2%;
+}
+.approval-and-acredation img {
+  width: 12rem;
+  height: 12rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem 1rem;
+  object-fit: contain;
+}
+.why-chose-reva {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2rem;
+}
+.why-chose-reva li {
+  /* border: 1px solid red; */
+  width: 25rem;
+  /* list-style: none; */
+  height: 6rem;
+  text-align: center;
+  padding: 2% 2%;
+  background-color: #0096a1;
+  color: white;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-size: 1.3rem;
+}
+
+.border-image-container {
+  border: 20px solid transparent;
+  padding: 15px;
+
+  border-color: aqua;
+}
+
+.why-chose-us-image {
+  width: 80%;
+}
+
+.eligibility-of-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0% 2%;
+}
+.eligibility-of-page div {
+  display: grid;
+  gap: 1rem;
+  width: 28rem;
+  height: 23rem;
+  text-align: center;
+  padding: 2% 2%;
+  position: relative;
+  border: 2px ridge #149cea;
+  outline: none;
+  background-color: transparent;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.eligibility-of-page div::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.eligibility-of-page div::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+
+  transition: 0.5s;
+}
+
+.eligibility-of-page div:hover::before,
+.eligibility-of-page div:hover::after {
+  transform: scale(0);
+}
+
+.eligibility-of-page div:hover {
+  box-shadow: inset 0px 0px 25px #1479ea;
+}
+.Top-Recruiters {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  animation: slide 6s linear infinite;
+  object-fit: cover;
+  margin-top: -2rem !important;
+}
+
+.Top-Recruiters img {
+  width: 15%;
+  height: 50%;
+}
+.main-campus-life {
+  padding: 4% 0%;
+}
+.campus-life {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 0% 2%;
+}
+.card-of-campus-life {
+  box-shadow: #3b1d6453 0px 4px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 19rem;
+  text-align: center;
+  background-color: #0096a1b8;
+  padding: 1% 1%;
+  color: white;
+  font-weight: 600;
+}
+.card-of-campus-life img {
+  width: 35%;
+}
+.card-of-campus-life h6 {
+  font-size: 1.2rem;
+}
+.ranks {
+  border-style: solid;
+  border-image-source: url("../Assets/border.jpg");
+  border-image-slice: 10%;
+  border-width: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  height: 23rem;
+  flex-wrap: wrap;
+  text-align: justify;
+  padding: 0% 2%;
+}
+.ranks h2,
+p {
+  font-family: serif;
+}
+.boxes-of-palcement li {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1% 1%;
+  color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.scolership p {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+  text-align: center;
+}
+.main-contact-us {
+  background-color: #009ddbe3;
+}
+.contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* special button */
+.contact-button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.contact-button:hover {
+  background-color: #0096a1;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.contact-button:active {
+  transform: translateY(-1px);
+}
+/* -------------------- */
+/* ------------------------- */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ------------------media query for the page */
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .main-head-text-of-landing-page {
+    padding-top: 2rem !important;
+    padding: 0% 2%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #00000029, #00000021),
+      url(../Assets/main-back.jpg);
+    /* background-image: url(./Assets/Ayurvedic-Medicine-Manufacturer-in-Kanpur.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: auto;
+  }
+
+  .head-text-of-page {
+    padding-top: 4rem;
+    font-size: 550%;
+    margin-bottom: -2rem;
+    font-weight: 600;
+    text-shadow: black 4px 4px 8px;
+  }
+  .second-head-text-of-page {
+    font-size: 300%;
+    font-weight: 600;
+    text-shadow: black 4px 4px 8px;
+  }
+
+  .span-text-of-page {
+    font-size: 1.7rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: black 4px 4px 8px;
+  }
+  .boxes-of-palcement {
+    flex-wrap: wrap;
+    padding: 2% 4%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 4rem;
+    font-family: sans-serif;
+  }
+
+  .tab {
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .Top-Recruiters img {
+    width: 30%;
+    height: 50%;
+  }
+}
