@@ -22,7 +22,7 @@ body {
   gap: 6rem;
   align-items: center;
   background-image: linear-gradient(to bottom, #00000062, #00000097),
-    url(../Assets/full-length-portrait-student-girl-against-brick-wall-with-textbooks.jpg);
+    url(../Assets/full-length-portrait-student-girl-against-brick-wall-with-textbooks\ \(1\).jpg);
   /* background-image: url(./Assets/Ayurvedic-Medicine-Manufacturer-in-Kanpur.jpg); */
   background-repeat: no-repeat;
   background-size: cover;

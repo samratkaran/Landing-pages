@@ -2,7 +2,6 @@ import "./Main.css";
 import Form from "./From/Form";
 import HeadText from "./HeadText/HeadText";
 import { Bounce, Fade } from "react-awesome-reveal";
-import Accordion from "react-bootstrap/Accordion";
 import { useState } from "react";
 import Modal from "./Modal/Modal";
 import CourseCard from "./cards/CourseCard";
@@ -140,7 +139,7 @@ const Main = () => {
                     CourseName={"B.Des"}
                     DegreeName={"Bachelor"}
                     Duration={"3 Years"}
-                    imageUrl={require("../Assets/couese-image/Bdes.jpeg")}
+                    imageUrl={require("../Assets/couese-image/B.Des.jpg")}
                   />
                   <CourseCard
                     CourseName={"BPT"}
@@ -240,7 +239,7 @@ const Main = () => {
           className="row main-Top-Recruiters"
           style={{ overflowX: "hidden" }}
         >
-          <div className="col-md-12 Top-Recruiters">
+          {/* <div className="col-md-12 Top-Recruiters">
             <img src={require("../Assets/slide-image/01.png")} alt="" />
             <img src={require("../Assets/slide-image/19.png")} alt="" />
             <img src={require("../Assets/slide-image/Capgemini.png")} alt="" />
@@ -264,7 +263,7 @@ const Main = () => {
             <img src={require("../Assets/slide-image/01.png")} alt="" />
             <img src={require("../Assets/slide-image/19.png")} alt="" />
             <img src={require("../Assets/slide-image/Capgemini.png")} alt="" />
-          </div>
+          </div> */}
         </div>
         <Bounce duration={1000}>
           <div className="row main-contact-us mt-5 mb-5">
@@ -368,7 +367,7 @@ const Main = () => {
               </div>
               <div class="card-of-campus-life">
                 {" "}
-                <img src={require("../Assets/home.png")} alt="" />{" "}
+                <img src={require("../Assets/home (1).png")} alt="" />{" "}
                 <h6>Air-conditioned classrooms </h6>
               </div>
             </div>
