@@ -19,13 +19,14 @@ const Main = () => {
       <Fade cascade damping={0.5}>
         <div className="row main-head-text-of-landing-page">
           <div className="col-md-8 text-white">
-            <p className="head-text-of-page">AMITY </p>
-            <p className="second-head-text-of-page"> UNIVERSITY, NOIDA</p>
-            <p className="span-text-of-page">
-              If you are looking to shape your future and live your dreams-Join
-              Amity University Noida.
+            <p className="head-text-of-page">
+              AMITY <b className="text-light"> UNIVERSITY</b>
             </p>
-            <p className="span-text-of-page ">Admission Open 2024-25</p>
+            {/* <p className="second-head-text-of-page"> UNIVERSITY</p> */}
+            <p className="span-text-of-page">
+              If you are looking to shape your future and live your dreams
+            </p>
+            <p className="span-text-of-page-two ">Admission Open 2024-25</p>
           </div>
 
           <div className="col-md-3">
