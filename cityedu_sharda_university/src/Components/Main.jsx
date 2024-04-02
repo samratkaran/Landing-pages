@@ -19,8 +19,10 @@ const Main = () => {
       <Fade cascade damping={0.5}>
         <div className="row main-head-text-of-landing-page">
           <div className="col-md-8 text-white">
-            <p className="head-text-of-page">SHARDA </p>
-            <p className="second-head-text-of-page"> UNIVERSITY, NOIDA</p>
+            <p className="head-text-of-page">
+              SHARDA <b className="text-light">UNIVERSITY</b>
+            </p>
+            {/* <p className="second-head-text-of-page">  NOIDA</p> */}
             <p className="span-text-of-page">
               The World is Going to Sharda University to shape their futures, If
               you wish to shape yours then Apply Now!!
@@ -36,15 +38,15 @@ const Main = () => {
       <div className="main-container mb-5">
         <HeadText value={"overview"}></HeadText>
         <div className="row main-overview-of-page">
-          <div className="col-md-5">
+          <div className="col-md-4">
             <img
-              className="overview-image "
+              className="overview-image d-none d-md-block "
               src={require("../Assets/about_img-removebg-preview.png")}
               alt=""
             />
           </div>
-          <div className="col-md-6 p-3 ">
-            <p style={{ fontSize: "1.7rem" }}>
+          <div className="col-md-7  p-3 ">
+            <p style={{ fontSize: "1.5rem", paddingBottom: "1rem" }}>
               Established in 2009, Sharda University, Greater Noida, is a
               renowned private institution located in the Delhi National Capital
               Region (NCR). Offering a diverse range of undergraduate,
@@ -54,6 +56,7 @@ const Main = () => {
               the university boasts top recruiters like Sleepwell, Cognizant,
               and Amazon.
             </p>
+            <img src={require("../Assets/ranking.png")} alt="" width={650} />
           </div>
         </div>
         <HeadText value={"Courses Offered"} />
@@ -112,29 +115,18 @@ const Main = () => {
                   />
 
                   <CourseCard
-                    CourseName={"B.Ed"}
-                    DegreeName={"Bachelor"}
-                    Duration={"3 Years"}
-                    imageUrl={require("../Assets/couese-image/B.Ed.jpg")}
-                  />
-                  <CourseCard
                     CourseName={"BCA"}
                     DegreeName={"Bachelor"}
                     Duration={"3 Years"}
                     imageUrl={require("../Assets/couese-image/Bachelor of Computer Applications.jpg")}
                   />
                   <CourseCard
-                    CourseName={"B.Arch"}
-                    DegreeName={"Bachelor"}
-                    Duration={"4 Years"}
-                    imageUrl={require("../Assets/couese-image/B.Arch.jpg")}
-                  />
-                  <CourseCard
-                    CourseName={"B.Plan"}
+                    CourseName={"B.Des / B.Arch"}
                     DegreeName={"Bachelor"}
                     Duration={"3 Years"}
-                    imageUrl={require("../Assets/couese-image/B.Plan.jpg")}
+                    imageUrl={require("../Assets/couese-image/B.Arch.jpg")}
                   />
+
                   <CourseCard
                     CourseName={"B.Pharma"}
                     DegreeName={"Bachelor"}
@@ -147,23 +139,24 @@ const Main = () => {
                     Duration={"3 Years"}
                     imageUrl={require("../Assets/couese-image/LL.B..jpg")}
                   />
+
                   <CourseCard
-                    CourseName={"BFA"}
+                    CourseName={"BOPTM"}
                     DegreeName={"Bachelor"}
                     Duration={"3 Years"}
-                    imageUrl={require("../Assets/couese-image/BFA.jpg")}
+                    imageUrl={require("../Assets/couese-image/BOPTM.jpeg")}
                   />
                   <CourseCard
-                    CourseName={"BHM"}
+                    CourseName={"BMLT"}
                     DegreeName={"Bachelor"}
                     Duration={"3 Years"}
-                    imageUrl={require("../Assets/couese-image/BHM.jpg")}
+                    imageUrl={require("../Assets/couese-image/BMLT.jpeg")}
                   />
                   <CourseCard
-                    CourseName={"B.Stat"}
+                    CourseName={"MBBS"}
                     DegreeName={"Bachelor"}
-                    Duration={"3 Years"}
-                    imageUrl={require("../Assets/couese-image/B.Stat..jpg")}
+                    Duration={"4/5 Years"}
+                    imageUrl={require("../Assets/couese-image/MBBS.jpeg")}
                   />
                 </div>
               )}
@@ -205,6 +198,48 @@ const Main = () => {
                     Duration={"2 Years"}
                     imageUrl={require("../Assets/couese-image/M.Pharma.jpg")}
                   />
+                  <CourseCard
+                    CourseName={"MDS"}
+                    DegreeName={"Master"}
+                    Duration={"2 Years"}
+                    imageUrl={require("../Assets/couese-image/MDS.jpeg")}
+                  />
+                  <CourseCard
+                    CourseName={"MPT"}
+                    DegreeName={"Master"}
+                    Duration={"2 Years"}
+                    imageUrl={require("../Assets/couese-image/MPT.jpeg")}
+                  />
+                  <CourseCard
+                    CourseName={"LL.M."}
+                    DegreeName={"Master"}
+                    Duration={"2 Years"}
+                    imageUrl={require("../Assets/couese-image/LL.M..jpeg")}
+                  />
+                  <CourseCard
+                    CourseName={"MS"}
+                    DegreeName={"Master"}
+                    Duration={"2 Years"}
+                    imageUrl={require("../Assets/couese-image/MS.jpeg")}
+                  />
+                  <CourseCard
+                    CourseName={"M.Des"}
+                    DegreeName={"Master"}
+                    Duration={"2 Years"}
+                    imageUrl={require("../Assets/couese-image/Mdes.jpg")}
+                  />
+                  <CourseCard
+                    CourseName={"M.Com"}
+                    DegreeName={"Master"}
+                    Duration={"2 Years"}
+                    imageUrl={require("../Assets/couese-image/mcom.jpeg")}
+                  />
+                  <CourseCard
+                    CourseName={"MD"}
+                    DegreeName={"Master"}
+                    Duration={"2 Years"}
+                    imageUrl={require("../Assets/couese-image/MD.jpeg")}
+                  />
                 </div>
               )}
             </div>
@@ -213,47 +248,34 @@ const Main = () => {
         <HeadText value={"Placement"} />
         <div className="row ">
           <div class="col-md-12 ">
-            <p
-              style={{ textAlign: "justify", padding: "0% 5%" }}
-              className="col-md-11 m-auto pb-4 "
-            >
-              Over 150,000 Amity alumni have successfully transitioned into top
-              organizations worldwide, with over 500 leading corporates,
-              including Fortune 500 employers, visiting the campus for
-              recruitment. Noteworthy achievements include 36,000 campus
-              placements in recent years, with 11,000 placements in 2021-22
-              alone. Despite challenges, Amity secured 1500 campus placements
-              even during the lockdown, with alumni drawing salaries of up to
-              Rs. 2 crore p.a.
-            </p>
             <div class="Students-component ">
               <ul className="boxes-of-palcement d-flex justify-content-center gap-5">
                 <li class="c1" style={{ backgroundColor: "#da2032" }}>
                   {" "}
                   <span style={{ fontSize: "2.5rem", fontWeight: 700 }}>
-                    11,000+{" "}
+                    150+{" "}
                   </span>{" "}
-                  Total No. of Offers
+                  Total MNCs
                 </li>
                 <li class="c2" style={{ backgroundColor: "#a61a32" }}>
                   {" "}
                   <span style={{ fontSize: "2.5rem", fontWeight: 700 }}>
-                    <i class="fa fa-inr" aria-hidden="true"></i> 61.75{" "}
-                    <small style={{ fontSize: "1.1rem !important" }}>LPA</small>
+                    <i class="fa fa-inr" aria-hidden="true"></i> 1{" "}
+                    <small style={{ fontSize: "1.1rem !important" }}>CPA</small>
                   </span>{" "}
                   Highest Package{" "}
                 </li>
                 <li class="c3" style={{ backgroundColor: "#034ea2" }}>
                   {" "}
                   <span style={{ fontSize: "2.5rem", fontWeight: 700 }}>
-                    <i class="fa fa-inr" aria-hidden="true"></i> 1,050
+                    <i class="fa fa-inr" aria-hidden="true"></i>550+
                   </span>{" "}
                   Total Recruiters
                 </li>
                 <li class="c4" style={{ backgroundColor: "#00abe6" }}>
                   {" "}
                   <span style={{ fontSize: "2.5rem", fontWeight: 700 }}>
-                    <i class="fa fa-inr" aria-hidden="true"></i> 5{" "}
+                    <i class="fa fa-inr" aria-hidden="true"></i> 5.56
                     <small style={{ fontSize: "1.1rem !important" }}>LPA</small>
                   </span>{" "}
                   Average Package{" "}
@@ -414,7 +436,7 @@ const Main = () => {
         <Fade delay={250}>
           <div className="row main-approval-and-acredation">
             <div className="col-md-12 approval-and-acredation">
-              <img src={require("../Assets/NACC-A.webp")} alt="" />
+              <img src={require("../Assets/NAAC.png")} alt="" />
               <img src={require("../Assets/AICTE.png")} alt="" />
               <img src={require("../Assets/ugc-removebg-preview.png")} alt="" />
             </div>
